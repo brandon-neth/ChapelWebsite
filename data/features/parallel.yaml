@@ -1,0 +1,5 @@
+weight: 2
+name: "Parallel"
+icon: "fas fa-lightbulb"
+url: "/parallel"
+description: "Chapel is built from the ground up to cleanly implement any parallel algorithm, at your desired level of abstraction. No need to adapt around language features added as an afterthought, or to choose between low-level control and convenience."

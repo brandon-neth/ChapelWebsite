@@ -1,0 +1,5 @@
+weight: 3
+name: "Fast"
+icon: "fas fa-print"
+url: ""
+description: "Chapel is a compiled language, generating fast machine code on a wide variety of platforms. Benchmarks written in Chapel meet or beat the performance of implementations in other languages."
