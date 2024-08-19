@@ -1,0 +1,53 @@
+<section id="example">
+  <div class="code-example" id="first-comparison">
+    {{ range .Site.Params.codes }}
+      <div class="code sample" data-for-sample="{{ .name }}">{{ highlight .code "Python" "style=github" }}</div>
+    {{ end }}
+    <fieldset>
+      {{ range .Site.Params.codes }}
+        <div class="sample-wrapper-div">
+          <label class="sample-wrapper" for="radio-{{ .name }}">
+            <input type="radio" id="radio-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .name "Chapel" }}checked{{ end }}>
+            <span class="sample">
+              <span class="name">{{ .name }}</span>
+              <span class="description">{{ .title }}</span>
+            </span>
+          </label>
+        </div>
+      {{ end }}
+    </fieldset>
+    <hr/>
+
+    
+  </div>
+  <script>
+  function setupCodeSample(id) {
+  const elt = document.getElementById(id);
+  const inputs = elt.querySelectorAll("input[type=radio]");
+  const selected = elt.querySelector("input[type=radio]:checked");
+  const samples = elt.querySelectorAll(".code[data-for-sample]");
+
+  function showInput(input) {
+    for (const s of samples) {
+      if (s.attributes["data-for-sample"].value === input.value) {
+        s.style.display = "block";
+      } else {
+        s.style.display = "none";
+      }
+    }
+  }
+
+  showInput(selected);
+  for (const input of inputs) {
+    input.addEventListener("change", () => showInput(input));
+  }
+}
+setupCodeSample("first-comparison");
+  </script>
+
+  <div class="buttons">
+    {{ range .Params.buttons }}
+      <a href="{{ .url }}" class="button{{ if .primary }} primary{{ end }}">{{ if .icon }}{{ partial "icon" .icon }}{{ end }}{{ .name }}</a>
+    {{ end }}
+  </div>
+</section>
