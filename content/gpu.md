@@ -20,7 +20,22 @@ keywords = ["TODO"]
   description="Mix high- and low-level control over execution, distribution, and data transfer"
 [[keyFeatures]]
   name="Portability Across Hardware"
-  description="Run the same code on Nvidia, AMD, and Intel GPUs"
+  description="Run the same code on NVIDIA and AMD GPUs"
+
+[[codeExamples]]
+  name = "Matrix Multiplication with CPUs"
+  codeFile = "static/code/MatMulCpu.chpl"
+[[codeExamples]]
+  name = "Matrix Multiplication with GPUs"
+  codeFile = "static/code/MatMulGpu.chpl"
+[[codeExamples]]
+  name = "Matrix Multiplication with CUDA"
+  codeFile = "static/code/MatMulCuda.cpp"
+[[codeExamples]]
+  name = "Matrix Multiplication with OpenCL"
+  codeFile = "static/code/MatMulOpencl.cpp"
+
+
 +++
 
 - GPUs are incredibly popular for accelerating computationally heavy workloads. Essential for HPC, AI, and scientific computing tasks
@@ -37,6 +52,8 @@ keywords = ["TODO"]
 {{<grid "keyFeatures">}}
 
 # Example: Matrix Multiplication
+
+{{<code-switcher "codeExamples">}}
 
 - Simple matrix multiplication using no GPUs
 - MatMul WITH GPUs

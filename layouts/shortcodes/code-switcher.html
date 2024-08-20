@@ -12,15 +12,16 @@
               {{ range sort $items "weight" }}
               <div class="item">
                   {{ if .href }}
-                  <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
+                  <a href="{{ .href }}" target="_blank" title="{{ .name | safeHTML }}">
                   {{ end }}
                       <div class="row">
                           <div class="col-sm-5 right">
-                              <h1>{{ .title | safeHTML }}</h1>
+                              <h1>{{ .name | safeHTML }}</h1>
                               {{ .description | safeHTML }}
                           </div>
                           <div class="col-sm-7">
-                              <img class="img-responsive" src="../{{ .image }}" alt="" style="padding-right: 30px">
+                            {{$content := readFile .codeFile}}
+                            {{ transform.Highlight $content "chapel"}}
                           </div>
                       </div>
                   {{ if .href }}
