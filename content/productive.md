@@ -18,7 +18,7 @@ keywords = ["TODO"]
   name="Language Tooling Support"
   description="TODO"
 [[highlightGrid]]
-  name=""
+  name="Multi-Resolution Abstractions"
   description="TODO"
 [[highlightGrid]]
   name="Writes Faster, Runs Faster"

@@ -1,5 +1,6 @@
 baseurl = "chapel-lang.org"
-title = "Chapel Programming Language"
+title = "The Chapel Programming Language"
+
 theme = "hugo-universal-theme"
 themesDir = "themes"
 languageCode = "en-us"
@@ -149,11 +150,9 @@ pluralizelisttitles = false
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
-    viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devcows", "hugo", "go"]
+    version="2.1"
+    versionURL="https://chapel-lang.org/blog/posts/announcing-chapel-2.1/"
     mainSections = ["blog"]
-    defaultDescription = "Site template made by Devcows using Hugo"
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -216,6 +215,7 @@ pluralizelisttitles = false
     logo_text = "Chapel"
 
     logo = "img/ChapelName.png"
+    name_logo = "img/ChapelName.png"
     logo_small = "img/ChapelName.png"
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
