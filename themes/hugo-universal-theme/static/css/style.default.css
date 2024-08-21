@@ -495,14 +495,7 @@ ul.list-style-none {
 .navbar-affixed-top.affix + section {
   margin-top: 62px;
 }
-@supports (position: sticky) {
-  .navbar-affixed-top {
-    position: sticky;
-  }
-  .navbar-affixed-top.affix + section {
-    margin-top: 0;
-  }
-}
+
 #login-modal {
   overflow: hidden;
 }
