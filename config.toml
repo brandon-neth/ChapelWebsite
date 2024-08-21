@@ -215,8 +215,8 @@ pluralizelisttitles = false
     disabled_logo = false
     logo_text = "Chapel"
 
-    logo = "img/chapel-logo.png"
-    logo_small = "img/chapel-nowords.png"
+    logo = "img/ChapelName.png"
+    logo_small = "img/ChapelName.png"
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
         <br>13/25 New Avenue
@@ -315,16 +315,74 @@ pluralizelisttitles = false
 
 
 [[params.codes]]
-  name="Chapel"
+  name="Distributed Hello World"
+  default="true"
   code = """
-//TODO: Chapel code example
+coforall loc in Locales do on loc
+  writeln("Hello World from locale ", here.id);
 """
-title="Supercomputer Ready"
 
 
 [[params.codes]]
-  name="MPI"
+  name="Parallel File IO"
   code="""
-//TODO: MPI code example
+forall elements in readDelimited("myFile.txt", t=cityTemperature) {
+  /* process data */
+}
+
+record cityTemperature: readDeserializable {
+  var city: string; // city name
+  var temp: real; // temperature
+}
+
+proc ref cityTemperature.deserialize(reader: fileReader(?), ref deserializer) throws {
+    this.city = reader.readThrough(';', stripSeparator=true);
+    this.temp = reader.read(real);
+}
 """
-title="Industry standard"
+
+[[params.codes]]
+  name="1D Heat Diffusion"
+  code="""
+const fullDomain = {0..<N};
+const interior = fullDomain.expand(-1);
+
+var u: [fullDomain] real = 1.0; 
+u[N/4..3*N/4] = 2.0; // make the middle a bit hotter
+
+var un = u;
+
+for 1..numSteps {
+  un <=> u; // swap the two arrays
+  forall i in interior do // shared-memory parallelism
+    u[i] = un[i] + alpha * (un[i-1] - 2*un[i] + un[i+1]);  
+}
+"""
+
+[[params.codes]]
+  name="Coral Reef Image Analysis Kernel"
+  code="""
+proc convolve(InputArr, OutputArr) { //3D Input, 2D Output
+ foreach ... {
+    tonOfMath();
+ }
+}
+
+proc main() {
+  var InputArr: ...;
+  var OutputArr: ...;
+
+  coforall loc in Locales do on loc { // use all nodes in parallel
+    coforall gpu in here.gpus do on gpu { // use all GPUs on this node in parallel
+      coforall task in 0..#numWorkers { // use numWorkers on this GPU in parallel
+        var MyInputArr = InputArr[...]; // high-level slice operations handle data copy
+        var MyOutputArr: ...;
+        convolve(MyInputArr,MyOutputArr);
+        OutputArr[...] = MyOutputArr;
+      }
+    }
+  }
+}
+"""
+
+

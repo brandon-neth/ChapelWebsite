@@ -23,17 +23,23 @@ keywords = ["TODO"]
   description="Run the same code on NVIDIA and AMD GPUs"
 
 [[codeExamples]]
-  name = "Matrix Multiplication with CPUs"
+  name = "Chapel CPU"
   codeFile = "static/code/MatMulCpu.chpl"
+  lang="Chapel"
+  first="true"
 [[codeExamples]]
-  name = "Matrix Multiplication with GPUs"
+  name = "Chapel GPU"
   codeFile = "static/code/MatMulGpu.chpl"
+  lang="Chapel"
+  second = "true"
 [[codeExamples]]
-  name = "Matrix Multiplication with CUDA"
+  name = "CUDA"
   codeFile = "static/code/MatMulCuda.cpp"
+  lang="C++"
 [[codeExamples]]
-  name = "Matrix Multiplication with OpenCL"
+  name = "OpenCL"
   codeFile = "static/code/MatMulOpencl.cpp"
+  lang="C"
 
 
 +++
@@ -53,8 +59,7 @@ keywords = ["TODO"]
 
 # Example: Matrix Multiplication
 
-{{<code-switcher "codeExamples">}}
-
+{{<code-example "codeExamples">}}
 - Simple matrix multiplication using no GPUs
 - MatMul WITH GPUs
 - Compare to MatMul with CUDA
@@ -63,7 +68,7 @@ keywords = ["TODO"]
 
 # Use Cases for Chapel's Built-In GPU Support
 
-{{<grid "useCases">}}
+<grid "useCases">}}
 # Try GPU Programming with Chapel Today
 
 - Text and link to GPU blog post
