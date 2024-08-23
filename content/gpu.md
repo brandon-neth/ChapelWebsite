@@ -39,7 +39,7 @@ keywords = ["TODO"]
 [[codeExamples]]
   name = "OpenCL"
   codeFile = "static/code/MatMulOpencl.cpp"
-  lang="C"
+  lang="C++"
 
 
 +++
@@ -60,15 +60,10 @@ keywords = ["TODO"]
 # Example: Matrix Multiplication
 
 {{<code-example "codeExamples">}}
-- Simple matrix multiplication using no GPUs
-- MatMul WITH GPUs
-- Compare to MatMul with CUDA
-- Compare to MatMul with OpenCL
-- Compare to MatMul with PyCUDA?
 
 # Use Cases for Chapel's Built-In GPU Support
 
-<grid "useCases">}}
+{{<grid "useCases">}}
 # Try GPU Programming with Chapel Today
 
 - Text and link to GPU blog post

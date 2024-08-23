@@ -18,8 +18,8 @@ keywords = ["TODO"]
   name="Language Tooling Support"
   description="TODO"
 [[highlightGrid]]
-  name="Multi-Resolution Abstractions"
-  description="TODO"
+  name="Easy Ramp Up"
+  description="TODO: CHAMPS story"
 [[highlightGrid]]
   name="Writes Faster, Runs Faster"
   description="Peer-reviewed study shows that Chapel is both faster and more productive than alternatives."
@@ -28,15 +28,16 @@ keywords = ["TODO"]
 
 Gone are the days of a codebase where the actual purpose of your code are overshadowed by all the MPI calls required to make it work. Cascade has powerful, succinct programming constructs for targeting all kinds of parallelism at all kinds of scales. From data parallelism to task parallelism and laptop to GPU to cluster, Cascade uses a unified set of language features so you can learn them once and use them again and again. 
 
-TODO: Tooling support
+{{<grid "highlightGrid">}}
 
-TODO: CHAMPS story
+# Fast _And_ Concise
 
-TODO: CLBG story: productive and fast
+TODO: CLBG story
 
 
-Stellar language features
-- config variables
-- `on` clauses
-- custom iterators
-- 
+{{<resize-image "/img/clbg/clbg_summary.png" "800px" >}}
+{{<resize-image "/img/clbg/clbg_summary_zoomed.png" "800px" >}}
+
+# Chapel's Language Features Make Coding Safe and Easy
+
+{{<grid "languageFeatures">}}

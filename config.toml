@@ -214,9 +214,9 @@ pluralizelisttitles = false
     disabled_logo = false
     logo_text = "Chapel"
 
-    logo = "img/ChapelName.png"
+    logo = "img/chapel-logo.svg"
     name_logo = "img/ChapelName.png"
-    logo_small = "img/ChapelName.png"
+    logo_small = "img/chapel-logo.svg"
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
         <br>13/25 New Avenue

@@ -4,30 +4,32 @@ description = "Scalability results with the Chapel programming language"
 keywords = ["TODO"]
 [[reasons]]
   name = "Global View of Data"
-  description="description 1"
+  description="TODO:"
 [[reasons]]
   name = "Multi-level Parallelism"
-  description="description 2"
+  description="TODO:"
 [[reasons]]
   name = "Data and Computational Locality"
-  description="description 3"
+  description="TODO:"
 
 [[perfResults]]
   title = "NAS FT"
-  description = "NAS FT description"
+  description = "TODO:"
   image = "img/perf/perf-ft.png"
   weight = 0
 [[perfResults]]
   title = "Stream"
-  description = "Stream description"
+  description = "TODO:"
   image = "img/perf/perf-stream.png"
   weight=1
 [[perfResults]]
   title = "Stencil"
+  description="TODO:"
   image = "img/perf/perf-stencil.png"
   weight=2
 [[perfResults]]
   title = "Random Access"
+  description="TODO:"
   image = "img/perf/perf-random-access.png"
   weight = 3
 
