@@ -1257,11 +1257,12 @@ fieldset[disabled] .btn-template-primary.active {
   filter: none;
   -webkit-filter: none;
 }
-.testimonials {
+
+.applications {
   padding: 0;
   margin-bottom: 40px;
 }
-.testimonials .item {
+.applications .item {
   list-style-type: none;
   margin: 0 5px;
   background: #fff;
@@ -1270,31 +1271,31 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.testimonials .item .testimonial {
+.applications .item .application {
   position: relative;
   padding: 20px;
 }
-.testimonials .item .testimonial:before,
-.testimonials .item .testimonial:after {
+.applications .item .application:before,
+.applications .item .application:after {
   content: " ";
   display: table;
 }
-.testimonials .item .testimonial:after {
+.applications .item .application:after {
   clear: both;
 }
-.testimonials .item .testimonial:before,
-.testimonials .item .testimonial:after {
+.applications .item .application:before,
+.applications .item .application:after {
   content: " ";
   display: table;
 }
-.testimonials .item .testimonial:after {
+.applications .item .application:after {
   clear: both;
 }
-.testimonials .item .testimonial .text {
+.applications .item .application .text {
   color: #999999;
   margin-bottom: 40px;
 }
-.testimonials .item .testimonial .bottom {
+.applications .item .application .bottom {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1305,33 +1306,34 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 20px;
   height: 50px;
 }
-.testimonials .item .testimonial .bottom .icon {
+.applications .item .application .bottom .icon {
   color: var(--primary-accent);
   font-size: 30px;
   float: left;
   width: 20%;
 }
-.testimonials .item .testimonial .name-picture {
+.applications .item .application .name-picture {
   float: right;
   width: 80%;
   text-align: right;
 }
-.testimonials .item .testimonial .name-picture h5 {
+.applications .item .application .name-picture h5 {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-.testimonials .item .testimonial .name-picture p {
+.applications .item .application .name-picture p {
   color: #999999;
   margin: 0;
   font-size: 12px;
 }
-.testimonials .item .testimonial .name-picture img {
+.applications .item .application .name-picture img {
   float: right;
   width: 60px;
   border-radius: 30px;
   margin-left: 10px;
 }
+
 .team-member {
   text-align: center;
   margin-bottom: 40px;
