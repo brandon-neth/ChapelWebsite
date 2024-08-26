@@ -1,5 +1,5 @@
 +++
-title = "Chapel: A Parallel-First Language"
+title = "Chapel: Built for Parallelism"
 description = "Parallel computing with the Chapel programming language"
 keywords = ["TODO"]
 +++

@@ -1,4 +1,3 @@
-text: "Some description of Scott's coral reef code"
+text: "Uses Chapel to analyze satellite imagery of the Mesoamerican Barrier Reef System, providing results on biodiversity 5 orders of magnitude faster than the previous solution. "
 name: "Coral Reef Alliance"
-position: ""
-avatar: "img/testimonials/person-3.png"
+url: "https://chapel-lang.org/presentations/Bachman-PAW-ATM.pdf"

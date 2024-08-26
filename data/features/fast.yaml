@@ -1,4 +1,4 @@
 weight: 3
 name: "Fast"
-url: ""
+url: "/fast"
 description: "Chapel is a compiled language, generating fast machine code on a wide variety of platforms. Benchmarks written in Chapel meet or beat the performance of implementations in other languages."
