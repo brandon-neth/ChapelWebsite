@@ -9,7 +9,7 @@ keywords = ["TODO"]
   url="https://chapel-lang.org/blog/posts/std-sort-performance/"
   weight=0
 
-[[singleNodeResult]]
+[[singleNodeResultNotReady]]
   name="N-Body Simulation"
   description="TODO"
   url="TODO"
@@ -31,6 +31,8 @@ keywords = ["TODO"]
   weight=5
 
 +++
+
+### Chapel Competes at _All_ Scales, Even the Smaller Ones
 
 {{<switcher "singleNodeResult">}}
 
