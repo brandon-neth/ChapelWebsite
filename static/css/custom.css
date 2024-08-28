@@ -12,7 +12,6 @@
   color: black;
   border-color: var(--chapel-green);
   border-width: 5px;
-  
 }
 
 .top-box-simple {
@@ -21,6 +20,7 @@
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  
 }
 
 .top-box-simple:hover {
