@@ -1,4 +1,5 @@
 weight: 4
 name: "Scalable"
 url: "/scalable"
-description: "Chapel enables application performance at any scale, from laptops to the largest supercomputers. Applications written in Chapel have attained new levels of performance on supercomputers and on desktops."
+description: "Chapel enables application performance at any scale, from laptops to the largest supercomputers. There's no machine too big for Chapel."
+longDescription: "Chapel enables application performance at any scale, from laptops to the largest supercomputers. Applications written in Chapel have attained new levels of performance on supercomputers and on desktops."

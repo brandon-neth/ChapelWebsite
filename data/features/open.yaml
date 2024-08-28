@@ -1,4 +1,5 @@
 weight: 6
 name: "Open"
 url: "https://github.com/chapel-lang/chapel"
-description: "Chapel's implementation is entirely open-source, and benefits from frequent community contributions and collaborations. The core team engages actively with the wider community across several platforms."
+description: "Chapel is entirely open-source and the core team engages actively with the wider community across several platforms."
+longDescription: "Chapel's implementation is entirely open-source, and benefits from frequent community contributions and collaborations. The core team engages actively with the wider community across several platforms."
