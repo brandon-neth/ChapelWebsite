@@ -1,105 +1,34 @@
-/* your styles go here */
-/* Example site test */
-
-.box-image-text .image {
-    min-height: 190px;
-    max-height: 190px;
-}
-
-.box-image-text .image img {
-    max-height: 190px;
-    margin: auto;
-}
-
-.content {
-  color: #555555;
-  font-size: 18px;
-}
-
-.box-simple {
-    min-height: 230px;
-}
-
-.top-icon {
+.top-box-text {
   display: inline-block;
-  width: 170px;
-  height: 50px;
-  line-height: 50px;
+  width: 240px;
+  height: 80px;
+  line-height: 70px;
   border: solid 2px #fff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
-  font-size: 18px;
   text-transform: uppercase;
-  line-height: 2.6;
   font-weight: 800;
   letter-spacing: 0.06em;
-  color: #222222;
+  color: black;
+  border-color: var(--chapel-green);
+  border-width: 5px;
+  
 }
 
 .top-box-simple {
-    text-align: center;
-    margin-bottom: 10px;
-    
-  }
-  .top-box-simple .top-icon {
-    border-color: var(--primary-accent);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  .top-box-simple h3 {
-    font-weight: normal;
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 1.5;
-    color: #555555;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-  }
-  .top-box-simple h3 a {
-    color: #555555;
-  }
-  .top-box-simple p {
-    color: #999999;
-  }
-  .top-box-simple:hover .icon {
-    -webkit-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
-    -o-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-  }
-  .top-box-simple:hover .icon i {
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  .top-box-simple.box-white {
-    padding: 20px;
-    border: dotted 1px #999999;
-  }
-  .top-box-simple.box-white .icon {
-    color: #555555;
-    border-color: transparent;
-    font-size: 70px;
-  }
-  .top-box-simple.box-dark {
-    padding: 20px;
-    border: dotted 1px #999999;
-    background: #555555;
-    color: #fff;
-  }
-  .top-box-simple.box-dark .icon {
-    color: #f7f7f7;
-    border-color: transparent;
-    font-size: 70px;
-  }
-  .top-box-simple.box-dark h3 {
-    color: #fff;
-  }
-  .top-box-simple.box-dark h3 a {
-    color: #fff;
-  }
-  .top-box-simple.box-dark p {
-    color: #fff;
-  }
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.top-box-simple:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}

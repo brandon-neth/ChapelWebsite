@@ -1,13 +1,17 @@
 /* Themed colors */
 :root {
-  --primary-accent: #38a7bb;
-  --navbar-border-top: #20616d;
+  --primary-accent: #009BC8;
+  --navbar-border-top: #84BE41;
   --button-border: #2a7d8c;
   --link-focus: #267280;
   --form-shadow: rgba(56, 167, 187, 0.6);
   --pagination-bg: #a7dbe5;
   --link-hover-bg: #2c8494;
   --navbar-focus: #80cbd9;
+  --chapel-blue: #009BC8;
+  --chapel-green: #84BE41;
+  --chapel-navy: #004B81;
+  --chapel-light-green: #d8eac2;
 }
 
 .clearfix:before,
@@ -1442,17 +1446,17 @@ fieldset[disabled] .btn-template-primary.active {
 .box-simple {
   text-align: center;
   margin-bottom: 40px;
-}
-.box-simple .icon {
-  color: var(--primary-accent);
-  border-color: var(--primary-accent);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  padding-top: 10px;
+  height: 240px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .box-simple h3 {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
   line-height: 1.5;
   color: #555555;
@@ -1464,12 +1468,18 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-simple p {
   color: #999999;
+  font-size: 18px;
 }
-.box-simple:hover .icon {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+
+.box-simple:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
 }
 .box-simple:hover .icon i {
   -webkit-transform: scale(1, 1);
@@ -1506,6 +1516,14 @@ fieldset[disabled] .btn-template-primary.active {
 .box-simple.box-dark p {
   color: #fff;
 }
+
+.quote {
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  padding-top: 10px;
+}
+
 .box-image {
   position: relative;
   overflow: hidden;
@@ -1777,6 +1795,25 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .bar.background-white {
   background: #fff;
+}
+
+.background-white {
+  background: #ffffff;
+}
+.background-light-green {
+  background: #D8EAC2;
+}
+
+.background-green {
+  background: #84be41;
+}
+
+.background-blue {
+  background: #009BC8;
+}
+
+.background-navy {
+  background: #004b81;
 }
 .bar.background-image-fixed-1 {
   background: url('../img/fixed-background-1.jpg') center top no-repeat;
@@ -3182,7 +3219,7 @@ a {
 a:hover,
 a:focus {
   color: var(--link-focus);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;

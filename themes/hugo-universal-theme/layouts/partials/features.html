@@ -2,7 +2,7 @@
 {{ if .Site.Params.features.enable }}
 {{ if isset .Site.Data "features" }}
 {{ if gt (len .Site.Data.features) 0 }}
-<section class="bar background-white">
+<section class="bar background-navy">
     <div class="container">
         {{ $elements := default 3 .Site.Params.features.cols }}
         {{ $features := sort .Site.Data.features "weight" }}
@@ -22,19 +22,21 @@
                     {{ $element := index $features $feature_index }}
 
                     <div class="col-md-{{ div 12 $elements }} col-{{ $j }} col-{{ if eq (mod $j 2) 0 }}odd{{ else }}even{{ end }}">
-                        <div class="box-simple">
-                            {{ with $element.url }}
+                        
+
+                        {{ with $element.url }}
                             <a href="{{ $element.url }}">
-                            {{ end }}
-                                <div class="icon">
-                                    <i class="{{ $element.icon }}"></i>
-                                </div>
-                            {{ with $element.url }}
-                            </a>
-                            {{ end }}
+                        {{ end }}
+                        <div class="box-simple background-white">
+                            
                             <h3>{{ $element.name | markdownify }}</h3>
                             <p>{{ $element.description | markdownify }}</p>
-                        </div>
+                            
+                        </div> 
+                        {{ with $element.url }}
+                            </a>
+                        {{ end }}
+                        
                     </div>
                 {{ end }}
             {{ end }}
