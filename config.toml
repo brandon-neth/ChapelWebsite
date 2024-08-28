@@ -330,8 +330,8 @@ pluralizelisttitles = false
 
 [[params.quotes]]
     name="Éric Laurendeau"
-    title="Professor, Department of Mechanical Engineering, Polytechnique Montréal"
-    quote="[Chapel] promets the programming efficiency ... We ask students at the master's degree to do stuff that would take 2 years and they do it in 3 months."
+    title="Professor, Polytechnique Montréal"
+    quote="[Chapel] promotes the programming efficiency ... We ask students at the master's degree to do stuff that would take 2 years and they do it in 3 months."
 
 [[params.quotes]]
     name="Tess Hayes"
