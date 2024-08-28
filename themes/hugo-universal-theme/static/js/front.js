@@ -145,6 +145,7 @@ function menuSliding () {
     }
   })
 
+
   $('.dropdown').on('hide.bs.dropdown', function () {
     if ($(window).width() > 750) {
       $(this).find('.dropdown-menu').first().stop(true, true).slideUp()
@@ -152,6 +153,17 @@ function menuSliding () {
       $(this).find('.dropdown-menu').first().stop(true, true).hide()
     }
   })
+
+  $('.dropdown').mouseenter(function() {
+    $(this).addClass('show')
+    $(this).children(".dropdown-menu").addClass('show')
+  })
+
+  $('.dropdown').mouseleave(function() {
+    $(this).removeClass('show')
+    $(this).children(".dropdown-menu").removeClass('show')
+  })
+
 }
 
 function menuMouseOver () {
