@@ -1,6 +1,11 @@
 /* Themed colors */
 :root {
-  --primary-accent: #009BC8;
+  --chapel-light-blue: #85e2ff;
+  --chapel-blue: #009BC8;
+  --chapel-green: #84BE41;
+  --chapel-navy: #004B81;
+  --chapel-light-green: #d8eac2;
+  --primary-accent: var(--chapel-blue);
   --navbar-border-top: #84BE41;
   --button-border: #2a7d8c;
   --link-focus: #267280;
@@ -8,10 +13,7 @@
   --pagination-bg: #a7dbe5;
   --link-hover-bg: #2c8494;
   --navbar-focus: #80cbd9;
-  --chapel-blue: #009BC8;
-  --chapel-green: #84BE41;
-  --chapel-navy: #004B81;
-  --chapel-light-green: #d8eac2;
+  
 }
 
 .clearfix:before,
@@ -326,7 +328,7 @@ ul.list-style-none {
   border-top: solid 5px transparent;
 }
 .navbar ul.nav > li > a:hover {
-  border-top: solid 5px var(--primary-accent);
+  border-top: solid 5px var(--chapel-blue); /* upper color on menu bar when you hover over it */
 }
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
@@ -343,18 +345,18 @@ ul.list-style-none {
   }
 }
 .navbar.navbar-light ul.nav > li.active > a {
-  border-top: solid 5px var(--navbar-border-top);
+  border-top: solid 5px var(--chapel-green);
   background: #fff !important;
   color: #555555 !important;
 }
 .navbar.navbar-light ul.nav > li.active > a:hover {
-  border-top: solid 5px var(--navbar-border-top);
+  border-top: solid 5px var(--chapel-green);
 }
 .navbar.navbar-light ul.nav > li > a:hover,
 .navbar.navbar-light ul.nav > li.open > a:hover,
 .navbar.navbar-light ul.nav > li > a:focus,
 .navbar.navbar-light ul.nav > li.open > a:focus {
-  border-top: solid 5px var(--primary-accent);
+  border-top: solid 5px var(--chapel-green);
   background: #fff !important;
   color: #555555 !important;
 }
@@ -369,9 +371,10 @@ ul.list-style-none {
   letter-spacing: 0.08em;
   padding: 4px 0;
 }
+/* the two below are for the dropdown menu items */
 .navbar ul.dropdown-menu li a {
   position: relative;
-  color: #999999;
+  color: #777777;
   font-size: 12px;
   display: block;
   -webkit-transition: all 0.2s ease-out;
@@ -380,7 +383,7 @@ ul.list-style-none {
   left: 0;
 }
 .navbar ul.dropdown-menu li a:hover {
-  color: var(--primary-accent);
+  color: var(--chapel-navy);
   text-decoration: none;
   background: none;
   left: 2px;
@@ -1447,9 +1450,9 @@ fieldset[disabled] .btn-template-primary.active {
   text-align: center;
   margin-bottom: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 16px;
   padding-top: 10px;
-  height: 240px;
+  height: 250px;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -2726,8 +2729,8 @@ fieldset[disabled] .btn-template-primary.active {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
-  border-color: var(--primary-accent);
+  background-color: var(--chapel-blue);
+  border-color: var(--chapel-navy);
 }
 .nav-tabs {
   border-bottom: 1px solid var(--primary-accent);
@@ -2743,7 +2746,7 @@ fieldset[disabled] .btn-template-primary.active {
   border-radius: 0 0 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee var(--primary-accent);
+  border-color: #eeeeee #eeeeee var(--chapel-navy);
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -2803,7 +2806,7 @@ fieldset[disabled] .btn-template-primary.active {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: var(--primary-accent);
+  background-color: var(--chapel-blue);
 }
 .nav-stacked > li {
   float: none;
@@ -3131,13 +3134,13 @@ fieldset[disabled] .btn-template-primary.active {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #555555;
-  background-color: var(--navbar-focus);
+  background-color: var(--chapel-light-green);  /* color of the menu bar item when hovering over it */
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: var(--primary-accent);
+  background-color: var(--chapel-navy);
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -3171,13 +3174,13 @@ fieldset[disabled] .btn-template-primary.active {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: var(--primary-accent);
+    color: var(--chapel-light-green);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: var(--primary-accent);
+    background-color: var(--chapel-light-green);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -3189,7 +3192,7 @@ fieldset[disabled] .btn-template-primary.active {
 .navbar-default .navbar-link {
   color: #555555;
 }
-.navbar-default .navbar-link:hover {
+.navbar-default .navbar-link:qhover {
   color: #555555;
 }
 .navbar-default .btn-link {

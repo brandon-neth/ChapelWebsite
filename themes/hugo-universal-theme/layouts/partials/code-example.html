@@ -18,7 +18,7 @@
 
       <div class="code-example" id="first-comparison">
         {{ range .Site.Params.codes }}
-          <div class="code sample" data-for-sample="{{ .name }}">{{ highlight .code "Chapel" "style=github" }}</div>
+          <div class="code sample" data-for-sample="{{ .name }}">{{ highlight .code "Chapel" }}</div>
         {{ end }}
         <fieldset>
           {{ range .Site.Params.codes }}
@@ -26,7 +26,7 @@
               <label class="sample-wrapper" for="radio-{{ .name }}">
                 <input type="radio" id="radio-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .default "true" }}checked{{ end }}>
                 <span class="sample">
-                  <span class="name">{{ .name }}</span>
+                  <span class="name" style="font-size: 16px">{{ .name }}</span>
                   <span class="description">{{ .title }}</span>
                 </span>
               </label>
