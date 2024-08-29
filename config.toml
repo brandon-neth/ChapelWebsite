@@ -56,36 +56,36 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Docs"
     identifier = "menu.docs"
-    url        = "/docs"
+    url        = "https://chapel-lang.org/docs/"
     weight     = 3
 
 [[menu.main]]
     name       = "Quickstart Instructions"
-    url        = "/"
+    url        = "https://chapel-lang.org/docs/usingchapel/QUICKSTART.html"
     weight     = 1
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Language Spec"
-    url        = "/"
+    url        = "https://chapel-lang.org/docs/language/spec/index.html"
     weight     = 2
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Primers"
-    url        = "/"
+    url        = "https://chapel-lang.org/docs/primers/index.html"
     weight     = 3
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Developer/Contributor Docs"
-    url        = "/"
+    url        = "https://chapel-lang.org/docs/developer/index.html"
     weight     = 4
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Technical Notes"
-    url        = "/"
+    url        = "https://chapel-lang.org/docs/technotes/index.html"
     weight     = 5
     parent     = "menu.docs"
 
@@ -100,14 +100,20 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Resources"
     identifier = "menu.resources"
-    url        = "/"
+    url        = "/resources"
     weight     = 5
 
 [[menu.main]]
     name       = "Community"
     identifier = "section.community"
-    url        = "/"
+    url        = "/community"
     weight     = 6
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "section.blog"
+    url        = "https://chapel-lang.org/blog"
+    weight     = 8
 
 [[menu.main]]
     name       = "Try"

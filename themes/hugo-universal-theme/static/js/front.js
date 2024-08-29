@@ -21,6 +21,7 @@ $(function () {
   counters()
   demo()
   contactFormAjax()
+  quoteAnimation()
 })
 
 // Ajax contact
@@ -396,3 +397,21 @@ $(window).resize(function () {
     windowWidth = newWindowWidth
   }
 })
+
+function quoteAnimation() {
+  console.log("quoteAnimation running");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show-quote')
+        //entry.target.classList.remove('hide-quote')
+      } else {
+        entry.target.classList.remove('show-quote')
+        //entry.target.classList.add('hide-quote')
+      }
+    })
+  })
+  const hiddenQuotes = document.querySelectorAll('.hide-quote');
+  console.log(hiddenQuotes);
+  hiddenQuotes.forEach((quote) => observer.observe(quote));
+}
