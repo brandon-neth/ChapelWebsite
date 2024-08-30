@@ -174,18 +174,6 @@ pluralizelisttitles = false
     versionURL="https://chapel-lang.org/blog/posts/announcing-chapel-2.1/"
     mainSections = ["blog"]
 
-    # Social media
-    facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
-    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
-    default_sharing_image = "img/sharing-default.png"
-
-    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
-    enableGoogleMaps = true
-    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
-
-    latitude = "-12.043333"
-    longitude = "-77.028333"
-
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "default"
 
@@ -223,8 +211,7 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    copyright = ""
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -237,15 +224,8 @@ pluralizelisttitles = false
     logo = "img/chapel-logo.svg"
     name_logo = "img/ChapelName.png"
     logo_small = "img/chapel-logo.svg"
-    contact_url = "/contact"
-    address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
-      </p>
+    contact_url = ""
+    address = """
       """
 
 [permalinks]
@@ -318,7 +298,7 @@ pluralizelisttitles = false
 [params.recent_posts]
     enable = true
     title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    subtitle = ""
     hide_summary = false
 
 [params.footer.recent_posts]

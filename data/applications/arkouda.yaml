@@ -1,3 +1,4 @@
 text: "Interactive data science at massive scale. Familiar Python client interface, powered by a Chapel server that scales to compute and memory resources beyond any comparable analysis tool."
 name: "Arkouda"
 url: "https://github.com/Bears-R-Us/arkouda"
+weight: 0
