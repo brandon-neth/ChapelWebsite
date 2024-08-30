@@ -20,7 +20,8 @@
                     data-autoplay="{{ default false .Site.Params.CarouselApplications.auto_play }}"
                     data-slide-speed="{{ default 2000 .Site.Params.CarouselApplications.slide_speed }}"
                     data-pagination-speed="{{ default 1000 .Site.Params.CarouselApplications.pagination_speed }}">
-                    {{ range .Site.Data.applications }}
+                    {{ $apps := sort .Site.Data.applications "weight" }}
+                    {{ range $apps }}
                     <li class="item">
                         <div class="application same-height-always">
                             <a href="{{ .url }}">
@@ -32,7 +33,6 @@
                                 <div class="name-picture">
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
                                     <h5>{{ .name }}</h5>
-                                    <p>{{ .position }}</p>
                                 </div>
                             </div>
                         </a>

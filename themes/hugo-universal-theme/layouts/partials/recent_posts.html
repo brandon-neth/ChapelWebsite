@@ -16,7 +16,8 @@
 
             <div class="row">
                 {{ $posts := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-                {{ range first 4 $posts.Pages }}
+                {{ $posts := sort $posts.Pages "Date" "desc"}}
+                {{ range first 4 $posts }}
                 <div class="col-md-3 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
