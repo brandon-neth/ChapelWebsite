@@ -32,3 +32,8 @@
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
+.publication-description p {
+  margin-left: 3em;
+  display: inline-block;
+}
