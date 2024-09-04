@@ -13,34 +13,25 @@
             </p>
 
             <!-- *** BLOG HOMEPAGE *** -->
-
-            <div class="row">
-                {{ $posts := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-                {{ $posts := sort $posts.Pages "Date" "desc"}}
+            {{ $posts := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+            {{ $posts := sort $posts.Pages "Date" "desc"}}
+            <div class="blog">
                 {{ range first 4 $posts }}
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
+                <div class="blog-post-row">
+                    <div class="blog-image">
                         <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                {{ if isset .Params "banner" }}
-                                <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
-                                {{ else }}
-                                <img src="{{ "img/chapel-logo-nowords.png" | relURL }}" class="img-responsive" alt="">
-                                {{ end }}
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> {{ i18n "readMore" }}</a>
-                                </p>
-                            </div>
+                            {{ if isset .Params "banner" }}
+                            <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
+                            {{ else }}
+                            <img src="{{ "img/chapel-logo-nowords.png" | relURL }}" class="img-responsive" alt="">
+                            {{ end }}
                         </div>
-
-                        <div class="content">
-                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <p class="author-category">
-			    {{ if isset .Params "authors" }}
-			      {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "%s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
+                    </div>
+                    <div class="blog-post-text">
+                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                        <p class="author-category">
+                            {{ if isset .Params "authors" }}
+                                {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "%s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
                             {{ end }}
                             {{ if .Params.date }}
                                 {{ $createdAt := .Date.Format .Site.Params.date_format }}
@@ -49,22 +40,15 @@
                                 {{ end }}
                                 {{ i18n "publishedOn" }} {{ $createdAt }}
                             {{ end }}
-                            </p>
-                            {{ if not .Site.Params.recent_posts.hide_summary }}
-                            <p class="intro">{{ .Summary }}</p>
-                            <p class="read-more">
-                              <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                            </p>
-                            {{ end }}
-                        </div>
+                        </p>
+                        <p class="intro">{{ .Summary }}</p>
+                        <p class="read-more">
+                            <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                        </p>
                     </div>
-                    <!-- /.box-image-text -->
-
                 </div>
                 {{ end }}
-
-            </div>
-            <!-- /.row -->
+        </div>
 
             <!-- *** BLOG HOMEPAGE END *** -->
 

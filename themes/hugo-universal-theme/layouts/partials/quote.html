@@ -1,12 +1,19 @@
 <section id="quotes">
   <div class="container" style="padding-top: 20px">
     
+    <div class="heading text-center">
+      <h2>People are Saying...</h2>
+  </div>
       {{range .Site.Params.quotes }}
       <div class="col-md-12 col-0 col-even">
         <div class="col-md-2"></div>
         <div class="quote col-md-10 col-1 col-odd hide-quote">
-          <h3>"{{.quote}}"</h3>
-        
+          <div class="quote-body">
+            <span class="open-quote">“</span>
+            <div class="quote-content">{{ .quote }}</div>
+            <span class="close-quote">”</span>
+          </div>
+
           <h4 style="text-align: right">
             - {{.name}}, {{.title}}
           </h4>

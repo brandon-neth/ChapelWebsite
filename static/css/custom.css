@@ -83,3 +83,55 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
+
+span.open-quote {
+  font-size: 3em;
+  margin-right: 0.2em;
+  vertical-align: middle;
+}
+
+span.close-quote {
+  font-size: 3em;
+  margin-left: 0.2em;
+  vertical-align: middle;
+}
+
+div.quote-content {
+  flex-grow: 1;
+}
+
+
+div.quote-body {
+  font-size: 1.6em;
+  padding: 0.7em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+.blog {
+width: 80%;
+margin: auto;
+border: 1px var(--chapel-navy);
+  border-width: 1px;
+}
+
+.blog-post-row {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  border: 1px solid var(--chapel-gray);
+  border-width: 1px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.blog-post-text {
+  padding: 1em;
+}
+.blog-image .img-responsive {
+  width: 100%;
+  padding: 1em;
+}
