@@ -17,8 +17,9 @@
     ]
   {{ end }}
 
-  {{ .authors }}
-  <i>{{ .venue }}</i>
+  {{ .authors }},
+  <i>{{ .venue }}</i>,
+  {{ .date }}
 
   <div class="publication-description">
     <p>{{ .description}}</p>

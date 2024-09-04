@@ -6,15 +6,16 @@
   --chapel-navy: #004B81;
   --chapel-light-green: #d8eac2;
   --chapel-gray: #666666;
+  --chapel-white: #ffffff;
+  --chapel-black: #222222;
   --primary-accent: var(--chapel-blue);
-  --navbar-border-top: #84BE41;
   --button-border: #2a7d8c;
   --link-focus: #267280;
   --form-shadow: rgba(56, 167, 187, 0.6);
   --pagination-bg: #a7dbe5;
   --link-hover-bg: #2c8494;
   --navbar-focus: #80cbd9;
-  
+  --chapel-shadow: 0 2px 6px 0 var(--chapel-gray), 0 2px 6px 0 var(--chapel-gray);
 }
 
 .clearfix:before,
@@ -334,7 +335,7 @@ ul.list-style-none {
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
   text-decoration: none !important;
-  border-top: solid 5px var(--navbar-border-top);
+  border-top: solid 5px var(--chapel-blue);
 }
 @media (max-width: 768px) {
   .navbar ul.nav > li.active > a,
