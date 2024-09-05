@@ -139,3 +139,26 @@ border: 1px var(--chapel-navy);
 .blog-image .img-responsive {
   padding: 1em;
 }
+
+#footer {
+  background-color: var(--chapel-navy);
+}
+.get-in-touch {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--chapel-white);
+}
+
+.get-in-touch a {
+  color: var(--chapel-white);
+}
+
+.get-in-touch a:link {
+  text-decoration: none;
+  color: var(--chapel-white);  
+}
+
+.get-in-touch a:hover {
+  text-decoration: none;
+  color: var(--chapel-light-gray);  
+}

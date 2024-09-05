@@ -2618,7 +2618,7 @@ fieldset[disabled] .btn-template-primary.active {
 #footer h4,
 #footer h5,
 #footer h6 {
-  color: #eeeeee;
+  color: var(--chapel-white);
 }
 #footer h4 {
   font-size: 14px;
@@ -2626,23 +2626,13 @@ fieldset[disabled] .btn-template-primary.active {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-#footer ul {
-  padding-left: 0;
-  list-style: none;
-}
-#footer ul a {
-  color: #999999;
-}
-#footer ul a:hover {
-  color: var(--primary-accent);
-  text-decoration: none;
-}
+
 #footer .photostream div {
   float: left;
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: boreader-box;
   width: 33%;
   padding: 7.5px;
   overflow: hidden;
@@ -2696,12 +2686,12 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 0;
 }
 #footer .social a {
-  color: #555555;
+  color: var(--chapel-green);
   font-size: 25px;
   margin: 0 10px 0 0;
 }
 #footer .social a:hover {
-  color: var(--primary-accent);
+  color: var(--chapel-green);
 }
 #copyright {
   background: #333;
