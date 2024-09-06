@@ -15,9 +15,9 @@
                   <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
                   {{ end }}
                       <div class="row">
-                          <div class="col-sm-5 right">
+                          <div class="col-sm-5 switcher-text right">
                               <h1>{{ .title | safeHTML }}</h1>
-                              {{ .description | safeHTML }}
+                              <p>{{ .description | safeHTML }}</p>
                           </div>
                           <div class="col-sm-7">
                               <img class="img-responsive" src="../{{ .image }}" alt="" style="padding-right: 30px">

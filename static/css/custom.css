@@ -225,3 +225,26 @@ border: 1px var(--chapel-navy);
 .application a:link {
   color: var(--chapel-black);
 }
+
+.switcher-text p{
+  font-size: 1.2em;
+  text-transform: none;
+}
+
+/* Image background carousel inactive selector */
+.home-carousel .owl-theme .owl-controls .owl-page span {
+  background: var(--chapel-black);
+  width: 16px;
+  height: 16px;
+}
+
+/* geometric background carousel selectors */
+.background-pentagon .owl-theme .owl-controls .owl-page span {
+  background: var(--chapel-black);
+  width: 16px;
+  height: 16px;
+}
+
+.background-pentagon .owl-theme .owl-controls .owl-page.active span {
+  background: var(--chapel-blue);
+}
