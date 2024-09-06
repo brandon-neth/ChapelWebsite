@@ -44,7 +44,7 @@ keywords = ["TODO"]
   url="https://chapel-lang.org/docs/language/spec/index.html#distributed-programming"
 
 [[parallelismTypes]]
-  name="GPU Parallelism"
+  name="CPU and GPU Parallelism"
   description="Update a handful of lines of code and your application will be ready for GPU execution."
   url="/gpu"
 +++

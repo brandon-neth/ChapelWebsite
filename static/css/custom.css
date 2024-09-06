@@ -257,6 +257,7 @@ border: 1px var(--chapel-navy);
 
 .grid-item {
   flex: 1;
+  margin-bottom: 32px;
 }
 
 .box-simple {

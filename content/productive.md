@@ -43,19 +43,20 @@ keywords = ["TODO"]
   url="https://inria.hal.science/hal-02879767"
   weight=2
 
+[[introText]]
+text="Gone are the days of a codebase where the actual purpose of your code are overshadowed by all the MPI calls required to make it work. Chapel has powerful, succinct programming constructs for targeting all kinds of parallelism at all kinds of scales. From data parallelism to task parallelism and laptop to GPU to cluster, Chapel uses a unified set of language features so you can learn them once and use them again and again."
 
 +++
 
-Gone are the days of a codebase where the actual purpose of your code are overshadowed by all the MPI calls required to make it work. Cascade has powerful, succinct programming constructs for targeting all kinds of parallelism at all kinds of scales. From data parallelism to task parallelism and laptop to GPU to cluster, Cascade uses a unified set of language features so you can learn them once and use them again and again. 
 
 # Productivity Highlights
 
 {{<grid "highlightGrid">}}
 
-# Chapel is Fast _And_ Concise 
+# Fast And Concise 
 
 {{<switcher "result">}}
 
-# Chapel's Language Features Make Coding Safe and Easy
+# Safe and Easy Coding
 
 {{<grid "languageFeatures">}}
