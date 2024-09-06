@@ -1,26 +1,33 @@
-{{$var := .Get 0}}
+<section class="bar background-pentagon">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading text-center">
+          <h2>{{ .Site.Params.applications.title }}</h2>
+        </div>
 
-<section>
-  <div class="home-carousel">
-      <div class="dark-mask"></div>
-      <div class="container">
-          <div class="homepage owl-carousel"
+
+        <div class="homepage owl-carousel"
               data-autoplay="{{ default false .Site.Params.CarouselHomepage.auto_play }}"
               data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
               data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
-              {{ $items := index .Page.Params $var }}
-              {{ range sort $items "weight" }}
+              {{ $apps := sort .Site.Data.applications "weight" }}
+                    {{ range $apps }}
               <div class="item">
                   {{ if .href }}
                   <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
                   {{ end }}
                       <div class="row">
-                          <div class="col-sm-5 right">
-                              <h1>{{ .title | safeHTML }}</h1>
-                              {{ .description | safeHTML }}
+                          <div class="col-sm-6 right">
+                              <h2>{{ .name }}</h2>
+                              <h4>{{ .tagline }} </h4>
+                              {{ .text | safeHTML }}
+
                           </div>
-                          <div class="col-sm-7">
+                          <div class="col-sm-6">
+                              <a href="{{ .url }}">
                               <img class="img-responsive" src="../{{ .image }}" alt="" style="padding-right: 30px">
+                            </a>"
                           </div>
                       </div>
                   {{ if .href }}
@@ -29,7 +36,7 @@
               </div>
               {{ end }}
           </div>
-          <!-- /.project owl-slider -->
       </div>
+    </div>
   </div>
 </section>

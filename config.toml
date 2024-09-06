@@ -281,7 +281,7 @@ pluralizelisttitles = false
     # at 'exampleSite/data/carousel'.
     # For more information take a look at the README.
     enable = false
-    auto_play = true
+    auto_play = false
     slide_speed = 2000
     pagination_speed = 1000
 

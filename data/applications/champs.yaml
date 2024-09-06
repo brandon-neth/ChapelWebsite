@@ -1,4 +1,6 @@
-text: "World-class multiphysics simulation software, written in Chapel by students under Eric Laurendeau at Polytechnique Montréal. Increased functionality over its C/MPI predecessor with a 3x reduction in code size."
+text: "Written in Chapel by students under Eric Laurendeau at Polytechnique Montréal. Increased functionality over its C/MPI predecessor with a 3x reduction in code size."
 name: "CHAMPS"
 url: "https://youtu.be/wD-a_KyB8aI?si=_0dktsORcA_kWbke"
 weight: 1
+image: "img/applications/champs.png"
+tagline: "World-class multiphysics simulation"

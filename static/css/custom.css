@@ -167,3 +167,61 @@ border: 1px var(--chapel-navy);
   text-decoration: none;
   color: var(--chapel-light-gray);  
 }
+
+.applications {
+  padding: 10px;
+}
+
+.applications .item {
+  background: var(--chapel-white);
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: var(--chapel-shadow);
+  margin: 20px 15px;
+}
+
+.applications .item .application {
+  position: relative;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.applications .item .application:before,
+.applications .item .application:after {
+  content: " ";
+  display: table;
+}
+.applications .item .application:after {
+  clear: both;
+}
+.applications .item .application:before,
+.applications .item .application:after {
+  content: " ";
+  display: table;
+}
+.applications .item .application:after {
+  clear: both;
+}
+.applications .item .application .text {
+  color: var(--chapel-gray);
+  margin-bottom: 40px;
+}
+.applications .item .application .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 50px;
+}
+.application a {
+  color: var(--chapel-black);
+}
+.application a:link {
+  color: var(--chapel-black);
+}

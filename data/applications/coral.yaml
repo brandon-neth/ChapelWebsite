@@ -2,3 +2,5 @@ text: "Uses Chapel to analyze satellite imagery of the Mesoamerican Barrier Reef
 name: "Coral Reef Alliance"
 url: "https://chapel-lang.org/presentations/Bachman-PAW-ATM.pdf"
 weight: 2
+image: "img/applications/champs.png"
+tagline: "Processing oceans of data"
