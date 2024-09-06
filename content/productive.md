@@ -9,20 +9,20 @@ keywords = ["TODO"]
   description="Language-level support for parsing command line arguments, at both compile-time and run-time."
   url="https://chapel-lang.org/docs/primers/variables.html#configs"
 [[languageFeatures]]
-  name = "Parallel execution constructs"
+  name = "Parallel loops"
   description="Chapel is designed to easily express all types of parallel algorithms with built-in language features"
   url="/parallel"
 [[languageFeatures]]
   name = "Memory Safety"
-  description = "Scope-based allocation/deallocation, variable ownership management, compiler lifetime analysis, and a default-safe string library make Chapel a safer alternative to languages like C and C++."
+  description = "Scope-based allocation & deallocation, ownership management, lifetime analysis, and default-safe strings make Chapel safer than C and C++."
 
 [[highlightGrid]]
   name="Language Tooling Support"
-  description="The Chapel Language Server supports common IDE features out of the box and the compiler frontend supports custom tooling"
+  description="The Chapel Language Server offers common IDE features and  custom tooling support."
   url="https://chapel-lang.org/blog/posts/chapel-lsp/"
 [[highlightGrid]]
-  name="Easy Ramp Up"
-  description="Chapel enabled the CHAMPS team to bring new contributors up to speed in just a few weeks"
+  name="Easy and Fast Ramp Up"
+  description="Chapel enabled the CHAMPS team to bring new contributors up to speed in just a few weeks."
   url="https://www.youtube.com/watch?v=wD-a_KyB8aI&t=1904s"
 [[highlightGrid]]
   name="Writes Faster, Runs Faster"

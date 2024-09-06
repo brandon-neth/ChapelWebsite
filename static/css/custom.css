@@ -248,3 +248,17 @@ border: 1px var(--chapel-navy);
 .background-pentagon .owl-theme .owl-controls .owl-page.active span {
   background: var(--chapel-blue);
 }
+
+
+.grid {
+  display: flex;
+  align-items: stretch;
+}
+
+.grid-item {
+  flex: 1;
+}
+
+.box-simple {
+  height: 100%;
+}

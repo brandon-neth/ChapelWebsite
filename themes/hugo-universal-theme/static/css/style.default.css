@@ -1477,29 +1477,31 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-simple {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   box-shadow: var(--chapel-shadow);
-  padding: 16px;
+  padding: 12px;
   padding-top: 10px;
-  height: 250px;
+  
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  display: block;
+  overflow: auto;
 }
 .box-simple h3 {
   font-weight: normal;
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1.5;
-  color: #555555;
+  color:  var(--chapel-black);
   font-weight: 800;
   letter-spacing: 0.08em;
 }
 .box-simple h3 a {
-  color: #555555;
+  color: var(--chapel-black);
 }
 .box-simple p {
-  color: #999999;
+  color: var(--chapel-gray);
   font-size: 18px;
 }
 
@@ -1521,7 +1523,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-simple.box-white {
   padding: 20px;
-  border: dotted 1px #999999;
+  border: dotted 1px var(chapel-gray);
 }
 .box-simple.box-white .icon {
   color: #555555;
