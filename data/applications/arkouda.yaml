@@ -2,5 +2,5 @@ text: "Familiar Python client interface, powered by a Chapel server that scales 
 name: "Arkouda"
 tagline: "Interactive data science at massive scale."
 url: "https://github.com/Bears-R-Us/arkouda"
-weight: 0
-image: "img/applications/champs.png"
+weight: 1
+image: "img/applications/arkouda.png"
