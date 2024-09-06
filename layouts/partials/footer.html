@@ -1,0 +1,17 @@
+<footer id="footer">
+  <div class="container">
+
+    <!-- social media and other accounts -->
+    <div class="col-md-6 col-sm-6">
+      <h4> Get In Touch </h4>
+      {{ range .Site.Menus.socials }}
+
+      <div class="col-md-6 col-sm-6 get-in-touch">
+        <img src="{{ .Identifier }}" alt="{{ .Name }}" />
+        <a href="{{ .URL }}"> {{ .Name }} </a>
+      </div>  
+      {{ end }}
+    </div>
+
+  </div>
+</footer>

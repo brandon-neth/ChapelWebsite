@@ -148,44 +148,49 @@ pluralizelisttitles = false
     weight = 1
     name = "GitHub"
     url = "https://github.com/chapel-lang/chapel"
-    pre = "<i class='fab fa-2x fa-github'></i>"
+    identifier = "img/socials/github.png"
 
 [[menu.socials]]
     weight = 2
     name = "X (Twitter)"
     url = "https://x.com/ChapelLanguage"
-    pre = "<i class='fab fa-2x fa-twitter'></i>"
+    identifier = "img/socials/twitter.png"
 
 [[menu.socials]]
     weight = 3
     name = "YouTube"
     url="https://www.youtube.com/@ChapelLanguage"
+    identifier = "img/socials/youtube.png"
 
 [[menu.socials]]
     weight = 4
     name = "LinkedIn"
     url = "https://www.linkedin.com/company/chapellanguage"
+    identifier = "img/socials/linkedin.png"
 
 [[menu.socials]]
     weight = 5
     name = "Mastodon"
     url = "https://mastodon.social/@chapelprogramminglanguage"
+    identifier = "img/socials/mastodon.png"
 
 [[menu.socials]]
     weight = 6
     name = "Discourse"
     url = "https://chapel.discourse.group/"
+    identifier = "img/socials/discourse.png"
 
 [[menu.socials]]
     weight = 7
     name = "Gitter"
     url = "https://gitter.im/chapel-lang/chapel"
+    identifier = "img/socials/gitter.png"
 
 [[menu.socials]]
     weight = 8
     name = "Facebook"
     url = "https://www.facebook.com/ChapelLanguage"
-    pre = "<i class='fab fa-2x fa-facebook'></i>"
+    identifier = "img/socials/facebook.png"
 
 [params]
     version="2.1"

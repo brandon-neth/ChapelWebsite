@@ -148,6 +148,11 @@ border: 1px var(--chapel-navy);
   text-decoration: none;
   color: var(--chapel-white);
 }
+.get-in-touch img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+}
 
 .get-in-touch a {
   color: var(--chapel-white);
