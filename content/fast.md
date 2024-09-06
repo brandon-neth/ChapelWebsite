@@ -30,10 +30,36 @@ keywords = ["TODO"]
   image=""
   weight=5
 
+
+[[compilerOptimizations]]
+  name="Automatic aggregation"
+  description="TODO"
+  url="TODO"
+
+[[fastFeatures]]
+  name="Array Reductions"
+  description="Sum an array or check for an element in a single parallel expression. Reductions are natively supported and automatically parallelized."
+  url="https://chapel-lang.org/docs/primers/reductions.html#reductions"
+
+[[fastFeatures]]
+  name="Sparse array operations"
+  description="TODO"
+  url="TODO"
+
+[[fastFeatures]]
+  name="Parallel IO"
+  description="Use every core with built-in support for parallel file IO."
+  url="TODO"
 +++
 
-### Chapel Competes at _All_ Scales, Even the Smaller Ones
+### Competes at _All_ Scales, Even the Smaller Ones
 
 {{<switcher "singleNodeResult">}}
 
+### Fast Out of the Box...
 
+{{<grid "fastFeatures">}}
+
+### And Even Faster with Flags
+
+{{<grid compilerOptimizations>}}

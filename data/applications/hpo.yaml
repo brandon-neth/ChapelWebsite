@@ -1,4 +1,0 @@
-text: "Uses Chapel as a backend for CrayAI hyperparameter optimization python package. Supports multiple ML toolkits and runs on desktop, cluster, cloud, and supercomputer."
-name: "CrayAI HyperParameter Optimization"
-url: "https://cray.github.io/crayai/hpo/hpo.html"
-weight: 4

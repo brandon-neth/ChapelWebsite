@@ -28,7 +28,7 @@
           {{ end }}
         </fieldset>
         {{ range .Site.Params.codes }}
-          <div class="code sample" data-for-sample="{{ .name }}">{{ highlight .code "Chapel" "style=github"}}</div>
+          <div class="code sample" data-for-sample="{{ .name }}">{{ highlight .code "Chapel" }}</div>
         {{ end }}
         
         <hr/>
