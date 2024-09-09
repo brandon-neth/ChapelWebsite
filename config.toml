@@ -1,4 +1,5 @@
-title = "The Chapel Programming Language"
+baseURL = "https://brandon-neth.github.io/ChapelWebsite/"
+ title = "The Chapel Programming Language"
 
 theme = "hugo-universal-theme"
 themesDir = "themes"
