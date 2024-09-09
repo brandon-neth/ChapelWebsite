@@ -14,7 +14,8 @@ keywords = ["TODO"]
   url="/parallel"
 [[languageFeatures]]
   name = "Memory Safety"
-  description = "Scope-based allocation & deallocation, ownership management, lifetime analysis, and default-safe strings make Chapel safer than C and C++."
+  description = "Scope-based (de)allocation, ownership management, default-safe strings, and other semantic checks make Chapel safer than C and C++."
+  url="https://chapel-lang.org/docs/usingchapel/compiling.html#most-useful-flags"
 
 [[highlightGrid]]
   name="Language Tooling Support"
