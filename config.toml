@@ -1,4 +1,3 @@
-baseurl = "chapel-lang.org"
 title = "The Chapel Programming Language"
 
 theme = "hugo-universal-theme"
