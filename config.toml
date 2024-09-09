@@ -30,30 +30,6 @@ pluralizelisttitles = false
     weight     = 1
 
 [[menu.main]]
-    name       = "Source"
-    url        = "/download#source"
-    weight     = 1
-    parent     = "menu.download"
-
-[[menu.main]]
-    name       = "Spack"
-    url        = "/download#spack"
-    weight     = 2
-    parent     = "menu.download"
-
-[[menu.main]]
-    name       = "Docker"
-    url        = "/download#docker"
-    weight     = 3
-    parent     = "menu.download"
-
-[[menu.main]]
-    name       = "Homebrew"
-    url        = "/download#homebrew"
-    weight     = 4
-    parent     = "menu.download"
-
-[[menu.main]]
     name       = "Docs"
     identifier = "menu.docs"
     url        = "https://chapel-lang.org/docs/"
