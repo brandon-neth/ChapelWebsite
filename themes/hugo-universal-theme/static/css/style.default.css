@@ -1551,34 +1551,6 @@ fieldset[disabled] .btn-template-primary.active {
   color: #fff;
 }
 
-.quote {
-  margin-bottom: 40px;
-  padding: 20px;
-  padding-top: 10px;
-}
-
-.hide-quote {
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-
-.show-quote {
-  opacity: 1;
-  transition: all 1s;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-  .hide-quote {
-    transition: none;
-  }
-  .show-quote {
-    transition: none;
-  }
-}
 
 .box-image {
   position: relative;
