@@ -406,7 +406,7 @@ function quoteAnimation() {
         entry.target.classList.add('show-quote')
         //entry.target.classList.remove('hide-quote')
       } else {
-        entry.target.classList.remove('show-quote')
+        //entry.target.classList.remove('show-quote')
         //entry.target.classList.add('hide-quote')
       }
     })
