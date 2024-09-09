@@ -46,7 +46,7 @@ keywords = ["TODO"]
 [[parallelismTypes]]
   name="CPU and GPU Parallelism"
   description="Update a handful of lines of code and your application will be ready for GPU execution."
-  url="/gpu"
+  url="../gpu"
 
 +++
 

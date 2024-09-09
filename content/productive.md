@@ -11,7 +11,7 @@ keywords = ["TODO"]
 [[languageFeatures]]
   name = "Parallel loops"
   description="Chapel is designed to easily express all types of parallel algorithms with built-in language features"
-  url="/parallel"
+  url="../parallel"
 [[languageFeatures]]
   name = "Memory Safety"
   description = "Scope-based (de)allocation, ownership management, default-safe strings, and other semantic checks make Chapel safer than C and C++."
