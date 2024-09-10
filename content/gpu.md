@@ -15,12 +15,15 @@ keywords = ["TODO"]
 [[keyFeatures]]
   name = "Unified Syntax"
   description = "No need to write seperate kernels for GPUs and CPUs"
+  url="https://chapel-lang.org/blog/posts/intro-to-gpus/"
 [[keyFeatures]]
   name = "Multi-Level Abstractions"
   description="Mix high- and low-level control over execution, distribution, and data transfer"
+  url="https://chapel-lang.org/blog/posts/gpu-data-movement/"
 [[keyFeatures]]
   name="Portability Across Hardware"
   description="Run the same code on NVIDIA and AMD GPUs"
+  url="https://chapel-lang.org/docs/technotes/gpu.html#vendor-portability"
 
 [[codeExamples]]
   name = "Chapel CPU"
@@ -44,14 +47,8 @@ keywords = ["TODO"]
 
 +++
 
-- GPUs are incredibly popular for accelerating computationally heavy workloads. Essential for HPC, AI, and scientific computing tasks
-
-# Why Use Chapel for GPU Programming?
-
-- Simplicity and Efficiency
-- Unified Programming Model
-  - The use of the Locale model to represent GPUs just like distributed computation
-
+GPUs are the powerhouse of modern computing workloads. But conventional GPU programming couldn't be more more difficult. Chapel makes it simple, all with the same easy-to-use language constructs as distributed programming.
+{.content-paragraph}
 
 # Key Features of Chapel for GPU Execution
 
@@ -64,8 +61,6 @@ keywords = ["TODO"]
 # Use Cases for Chapel's Built-In GPU Support
 
 {{<grid "useCases">}}
-# Try GPU Programming with Chapel Today
 
-- Text and link to GPU blog post
 
 

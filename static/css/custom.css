@@ -302,3 +302,29 @@ border: 1px var(--chapel-navy);
   line-height: 1.5;
 }
 
+.social-description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.social-category {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+a .social-name {
+  color: var(--chapel-blue);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a:hover .social-name {
+  color: var(--chapel-navy);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+
+
