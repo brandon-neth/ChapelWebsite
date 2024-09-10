@@ -2,130 +2,81 @@
 {{ $items := index .Page.Params $var }}
 
 <section id="test">
-<div class="container">
-  <div class="row row-0 row-even">
+  <div class="container">
     <div class="col-md-6 col-0 col-even">
-         
-  <div class="code-example" id="code-comparison1">
-    <fieldset>
-      {{ range $items }}
-        <div class="sample-wrapper-div">
-          <label class="sample-wrapper" for="radio-{{ .name }}">
-            <input type="radio" id="radio-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .first "true" }}checked{{ end }}>
-            <span class="sample">
-              <span class="name">{{ .name }}</span>
-              <span class="description">{{ .title }}</span>
-            </span>
-          </label>
-        </div>
-      {{ end }}
-    </fieldset>
-    {{ range $items }}
-      {{ $code := readFile .codeFile}}
-      <div class="code sample" data-for-sample="{{ .name }}">{{ highlight $code .lang "style=github" }}</div>
-    {{ end }}
-    
-    <hr/>
+      <div class="code-example" id="code-comparison1">
+        <fieldset>
+          {{ range $items }}
+            <div class="sample-wrapper-div">
+              <label class="radio-code-selector" for="radio1-{{ .name }}">
+                <input type="radio" id="radio1-{{ .name }}" value="{{ .name }}" name="code-sample1" {{ if eq .first "true" }}checked{{ end }}>
+                {{ .name }}
+              </label>
+            </div>
+          {{ end }}
+        </fieldset>
 
-    
-  </div>
-  <script>
-  function setupCodeSample(id) {
-  const elt = document.getElementById(id);
-  const inputs = elt.querySelectorAll("input[type=radio]");
-  const selected = elt.querySelector("input[type=radio]:checked");
-  const samples = elt.querySelectorAll(".code[data-for-sample]");
-
-  function showInput(input) {
-    for (const s of samples) {
-      if (s.attributes["data-for-sample"].value === input.value) {
-        s.style.display = "block";
-      } else {
-        s.style.display = "none";
-      }
-    }
-  }
-
-  showInput(selected);
-  for (const input of inputs) {
-    input.addEventListener("change", () => showInput(input));
-  }
-}
-setupCodeSample("code-comparison1");
-  </script>
-
-  <div class="buttons1">
-    {{ range .Site.Params.buttons }}
-      <a href="{{ .url }}" class="button{{ if .primary }} primary{{ end }}">{{ if .icon }}{{ partial "icon" .icon }}{{ end }}{{ .name }}</a>
-    {{ end }}
-  </div>
+        {{ range $items }}
+          {{ $code := readFile .codeFile}}
+          <div class="code-sample1" data-for-sample="{{ .name }}">{{ highlight $code .lang "style=github" }}</div>
+        {{ end }}
+      </div>
     </div>
-    <div class="col-md-6 col-1 col-odd">
-      
-  <div class="code-example" id="code-comparison2">
-    <fieldset>
-      {{ range $items }}
-        <div class="sample-wrapper-div">
-          <label class="sample-wrapper" for="radio-{{ .name }}">
-            <input type="radio" id="radio2-{{ .name }}" value="{{ .name }}" name="code-sample2" {{ if eq .second "true" }}checked{{ end }}>
-            <span class="sample">
-              <span class="name">{{ .name }}</span>
-              <span class="description">{{ .title }}</span>
-            </span>
-          </label>
-        </div>
-      {{ end }}
-    </fieldset>
-    {{ range $items }}
-      {{ $code := readFile .codeFile}}
-      <div class="code sample" data-for-sample="{{ .name }}">{{ highlight $code .lang "style=github" }}</div>
-    {{ end }}
-    
-    <hr/>
+    <div class="col-md-6 col-0 col-even">
+      <div class="code-example" id="code-comparison2">
+        <fieldset>
+          {{ range $items }}
+            <div class="sample-wrapper-div">
+              <label class="radio-code-selector" for="radio2-{{ .name }}">
+                <input type="radio" id="radio2-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .first "true" }}checked{{ end }}>
+                {{ .name }}
+              </label>
+            </div>
+          {{ end }}
+        </fieldset>
 
-    
+        {{ range $items }}
+          {{ $code := readFile .codeFile}}
+          <div class="code-sample2" data-for-sample="{{ .name }}">{{ highlight $code .lang "style=github" }}</div>
+        {{ end }}
+      </div>
+    </div>
   </div>
   <script>
-  function setupCodeSample(id) {
-  const elt = document.getElementById(id);
-  const inputs = elt.querySelectorAll("input[type=radio]");
-  const selected = elt.querySelector("input[type=radio]:checked");
-  const samples = elt.querySelectorAll(".code[data-for-sample]");
+    function setupCodeSample(num) {
+      const elt = document.getElementById("code-comparison" + num);
+      const inputs = elt.querySelectorAll("input[type=radio]");
+      for (const input of inputs) {
+        console.log(input);
+      }
+      const selected = elt.querySelector("input[type=radio]:checked");
+      console.log("Selected:");
+      console.log(selected);
+      const samples = elt.querySelectorAll(".code-sample" + num + "[data-for-sample]");
+      console.log("Samples:");
+      for (const s of samples) {
+        console.log(s);
+      }
+      function showInput(input) {
+        for (const s of samples) {
+          if (s.attributes["data-for-sample"].value === input.value) {
+            s.style.display = "block";
+            console.log("Setting to block");
+          } else {
+            s.style.display = "none";
+            console.log("setting to none");
+          }
+        }
+      }
 
-  function showInput(input) {
-    for (const s of samples) {
-      if (s.attributes["data-for-sample"].value === input.value) {
-        s.style.display = "block";
-      } else {
-        s.style.display = "none";
+      showInput(selected);
+      for (const input of inputs) {
+        input.addEventListener("change", () => showInput(input));
       }
     }
-  }
-
-  showInput(selected);
-  for (const input of inputs) {
-    input.addEventListener("change", () => showInput(input));
-  }
-}
-setupCodeSample("code-comparison2");
+    setupCodeSample("1");
+    setupCodeSample("2");
   </script>
-
-<div class="buttons2">
-  {{ range .Site.Params.buttons }}
-    <a href="{{ .url }}" class="button{{ if .primary }} primary{{ end }}">{{ if .icon }}{{ partial "icon" .icon }}{{ end }}{{ .name }}</a>
-  {{ end }}
-</div>
-  </div>
-</div>
-
-</section>
-
-
-
-<section id="example">
-
-   
-</div>
-
+  
 
 </section>

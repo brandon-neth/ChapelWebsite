@@ -2,15 +2,19 @@
 title = "GPU Programming Made Simple with Chapel"
 description = "Writing GPU programs is a breeze with the Chapel programming language"
 keywords = ["TODO"]
+
 [[useCases]]
   name = "HPC and Scientific Computing"
   description = "Large-scale simulations, fluid dynamics, weather modeling"
+  url="https://github.com/sdbachman/Chapel_Beta_Diversity"
 [[useCases]]
   name = "AI and Machine Learning"
   description="Training deep neural networks and other GPU-intensive tasks"
+  url="https://github.com/Iainmon/ChAI"
 [[useCases]]
   name="Data Analytics and Genomics"
   description="Accelerate data processing and analysis for bioinformatics"
+  url="https://github.com/femto-dev/femto/tree/main/src/ssort_chpl"
 
 [[keyFeatures]]
   name = "Unified Syntax"
