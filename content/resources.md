@@ -78,6 +78,161 @@ keywords = ["TODO"]
   description="This is an early overview of Chapel's themes and main language concepts."
   url="http://hpc.sagepub.com/content/21/3/291.abstract"
 
+[[projectUpdates]]
+  title="Chapel Comes of Age: Productive Parallelism at Scale"
+  authors="Brad Chamberlain, Elliot Ronaghan, Ben Albrecht, Lydia Duncan, Michael Ferguson, Ben Harshbarger, David Iten, David Keaton, Vassily Litvinov, Preston Sahabu, and Greg Titus"
+  venue="CUG 2018, Stockholm Sweden"
+  date="May 22, 2018."
+  description="This paper describes the progress that has been made with Chapel since the HPCS program wrapped up."
+  url="https://chapel-lang.org/publications/cug2018-chapel.pdf"
+  slides="https://chapel-lang.org/publications/ChapelForCUG2018.pdf"
+
+[[projectUpdates]]
+  title="The State of the Chapel Union"
+  authors="Bradford L. Chamberlain, Sung-Eun Choi, Martha Dumler, Thomas Hildebrandt, David Iten, Vassily Litvinov, Greg Titus. "
+  venue="CUG 2013, "
+  date="May 2013."
+  description="This paper provides a snapshot of the Chapel project at the juncture between the end of the HPCS project and the start of the next phase in Chapel's development. It covers past successes, current status, and future directions."
+  url="https://chapel-lang.org/papers/ChapelCUG13.pdf"
+  slides="https://chapel-lang.org/presentations/ChapelForCUG13-final.pdf"
+
+[[optimizationPapers]]
+  title="Locality-Based Optimizations in the Chapel Compiler"
+  authors="Engin Kayraklioglu, Elliot Ronaghan, Michael P. Ferguson, and Bradford L. Chamberlain"
+  venue="LCPC 2021"
+  date="October 13, 2021"
+  description="This paper describes a pair of recent compiler optimizations focused on reducing communication overheads in Chapel, leveraging Chapel's high-level abstractions—one that strength reduces local array accesses, and a second which aggregates communications to amortize overheads."
+  url="https://lcpc2021.github.io/pre_workshop_papers/Kayraklioglu_lcpc21.pdf"
+  slides="https://chapel-lang.org/presentations/engin_lcpc21_slides.pdf"
+
+[[optimizationPapers]]
+  title="A Machine-Learning-Based Framework for Productive Locality Exploitation"
+  authors="Engin Kayraklioglu, Erwan Fawry, Tarek El-Ghazawi"
+  venue="IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS). Volume 32, Issue 6"
+  date="June 2021"
+  description="This paper describes an approach that can efficiently train machine learning models that can be used to improve application execution times and scalability on distributed memory systems. This is achieved by analyzing the fine-grained communication profile of the application with small input data, and then predicting the communication patterns for more realistic inputs and coarsening the communication."
+  url="https://ieeexplore.ieee.org/document/9321696"
+
+[[optimizationPapers]]
+  title="LLVM-based Communication Optimizations for PGAS Programs"
+  authors="Akihiro Hayashi, Jisheng Zhao, Michael Ferguson, Vivek Sarkar"
+  venue="2nd Workshop on the LLVM Compiler Infrastructure in HPC (LLVM-HPC2)"
+  date="November 2015" 
+  description="This paper describes how LLVM passes can optimize communication in PGAS languages like Chapel. In particular, by representing potentially remote addresses using a distinct address space, existing LLVM optimization passes can be used to reduce communication"
+  url="http://ahayashi.blogs.rice.edu/files/2013/07/Chapel_LLVM_camera_ready-q6usv4.pdf"
+
+[[optimizationPapers]]
+  title="Caching Puts and Gets in a PGAS Language Runtime"
+  authors="Michael P. Ferguson, Daniel Buettner"
+  venue="9th International Conference on Partitioned Global Address Space Programming Models (PGAS 2015)"
+  date="Sept 2015"
+  description="This paper describes an optimization implemented for Chapel in which the runtime library aggregates puts and gets in accordance with Chapel's memory consistency model in order to reduce the potential overhead of doing fine-grained communications."
+  url="https://chapel-lang.org/papers/pgas15-caching.pdf"
+  slides="https://chapel-lang.org/presentations/PGAS15/pgas-2015-caching.pdf"
+
+[[applicationPapers]]
+  title="A Comparative Study of High-Productivity High-Performance Programming Languages for Parallel Metaheuristics"
+  authors="Jan Gmys, Tiago Carneiro, Nouredine Melab, El-Ghazali Talbi, Daniel Tuyttens"
+  venue="Swarm and Evolutionary Computation, volume 57. September 2020"
+  description="This paper compares Chapel with Julia, Python/Numba, and C+OpenMP in terms of performance, scalability and productivity. Two parallel metaheuristics are implemented for solving the 3D Quadratic Assignment Problem (Q3AP), using thread-based parallelism on a multi-core shared-memory computer. The paper also evaluates and compares the performance of the languages for a parallel fitness evaluation loop, using four different test functions with different computational characteristics. The authors provide feedback on the implementation and parallelization process in each language."
+  url="https://www.sciencedirect.com/science/article/abs/pii/S2210650220303734"
+  extraLink="https://hal.inria.fr/hal-02879767/document"
+  extraLinkText="PDF"
+
+[[applicationPapers]]
+  title="Hypergraph Analytics of Domain Name System Relationships"
+  authors="Cliff A Joslyn, Sinan Aksoy, Dustin Arendt, Jesun Firoz, Louis Jenkins, Brenda Praggastis, Emilie Purvine, Marcin Zalewski"
+  venue="17th Workshop on Algorithms and Models for the Web Graph (WAW 2020)"
+  date="September 21–24, 2020"
+  description="This paper applies hypergraph analytics over a gigascale DNS data using CHGL, performing compute-intensive calculations for data reduction and segmentation. Identified portions are then sent to HNX for both exploratory analysis and knowledge discovery targeting known tactics, techniques, and procedures."
+  url="https://louisjenkinscs.github.io/publications/WAW_2020.pdf"
+
+[[applicationPapers]]
+  title="Towards ultra-scale Branch-and-Bound using a high-productivity language"
+  authors="Tiago Carneiro, Jan Gmys, Nouredine Melab, and Daniel Tuyttens"
+  venue="Future Generation Computer Systems, volume 105, pages 196-209"
+  date="April 2020."
+  description="This paper uses Chapel to study the design and implementation of distributed Branch-and-Bound algorithms for solving large combinatorial optimization problems. Experiments on the proposed algorithms are performed using the Flow-shop scheduling problem as a test-case. The Chapel-based application is compared to a state-of-the-art MPI+Pthreads-based counterpart in terms of performance, scalability, and productivity."
+  url="https://www.sciencedirect.com/science/article/abs/pii/S0167739X1930946X"
+
+[[applicationPapers]]
+  title="Graph Algorithms in PGAS: Chapel and UPC++"
+  authors="Louis Jenkins, Jesun Sahariar Firoz, Marcin Zalewski, Cliff Joslyn, Mark Raugas"
+  venue="2019 IEEE High Performance Extreme Computing Conference (HPEC ‘19)"
+  date="September 24–26, 2019."
+  description="This paper compares implementations of Breadth-First Search and Triangle Counting in Chapel and UPC++"
+  url="https://louisjenkinscs.github.io/publications/HPEC.pdf"
+
+[[multiResolutionPapers]]
+  title="User-Defined Parallel Zippered iterators in Chapel"
+  authors="Bradford L. Chamberlain, Sung-Eun Choi, Steven J. Deitz, Angeles Navarro"
+  venue="PGAS 2011: Fifth Conference on Partitioned Global Address Space Programming Models"
+  date="October 2011"
+  description="This paper describes how users can create parallel iterators that support zippered iteration in Chapel, demonstrating them via several examples that partition iteration spaces statically and dynamically."
+  url="http://pgas11.rice.edu/papers/ChamberlainEtAl-Chapel-Iterators-PGAS11.pdf"
+  slides="https://chapel-lang.org/presentations/ChapelForPGAS2011.pdf"
+
+[[multiResolutionPapers]]
+  title="Authoring User-Defined Domain Maps in Chapel"
+  authors="Bradford L. Chamberlain, Sung-Eun Choi, Steven J. Deitz, David Iten, Vassily Litvinov"
+  venue="CUG 2011"
+  date="May 2011"
+  description="This paper builds on our HotPAR 2010 paper by describing the programmer's role in implementing user-defined distributions and layouts in Chapel."
+  url="https://chapel-lang.org/publications/cug11-final.pdf"
+  slides="https://chapel-lang.org/presentations/ChapelForCUG2011.pdf"
+
+[[multiResolutionPapers]]
+  title="User-Defined Distributions and Layouts in Chapel: Philosophy and Framework"
+  authors="Bradford L. Chamberlain, Steven J. Deitz, David Iten, Sung-Eun Choi"
+  venue="2nd USENIX Workshop on Hot Topics in Parallelism (HotPar'10)"
+  date="June 2010"
+  description="This paper describes our approach and software framework for implementing user-defined distributions and memory layouts using Chapel's domain map concept."
+  url="https://chapel-lang.org/publications/hotpar10-final.pdf"
+  slides="https://chapel-lang.org/presentations/Chamberlain-HotPAR10.pdf"
+
+[[toolPapers]]
+  title="ChplBlamer: A Data-centric and Code-centric Combined Profiler for Multi-locale Chapel Programs"
+  authors="Hui Zhang and Jeffrey K. Hollingsworth"
+  venue="In Proceedings of the 32nd ACM International Conference on Supercomputing (ICS'18), pages 252–262"
+  date="June 2018"
+  description="This paper describes a tool that uses a combination of data-centric and code-centric information to relate performance profiling information back to user-level data structures and source code in Chapel programs."
+  url="http://ics2018.ict.ac.cn/essay/ChplBlamer-final_version.pdf"
+  slides="https://chapel-lang.org/papers/ICS18-Hui-slides.pdf"
+
+[[toolPapers]]
+  title="APAT: an access pattern analysis tool for distributed arrays"
+  authors="Engin Kayraklioglu and Tarek El-Ghazawi"
+  venue="In Proceedings of the 15th ACM International Conference on Computing Frontiers (CF'18), pages 248–251"
+  date="May 2018"
+  description="This paper proposes a high-level, data-centric profiler to analyze how distributed arrays are used by each locale."
+  url="https://dl.acm.org/citation.cfm?id=3203266"
+
+[[explorationPapers]]
+  title="LAPPS: Locality-Aware Productive Prefetching Support for PGAS"
+  authors="Engin Kayraklioglu, Michael Ferguson, and Tarek El-Ghazawi"
+  venue="ACM Transactions on Architecture and Code Optimizations (ACM TACO). Volume 15, Issue 3"
+  date="September 2018"
+  description="This paper describes a high-level, easy-to-use language feature to improve data locality efficiently."
+  url="https://dl.acm.org/citation.cfm?id=3233299"
+
+[[explorationPapers]]
+  title="Parameterized Diamond Tiling for Stencil Computations with Chapel Parallel Iterators"
+  authors="Ian J. Bertolacci, Catherine Olschanowsky, Ben Harshbarger, Bradford L. Chamberlain, David G. Wonnacott, Michelle Mills Strout"
+  venue="ICS 2015"
+  date="June 2015"
+  description="This paper explores the expression of parameterized diamond-shaped time-space tilings in Chapel, demonstrating competitive performance with C+OpenMP along with significant software engineering benefits due to Chapel's support for parallel iterators."
+  url="https://www2.cs.arizona.edu/~ianbertolacci/publications/ICS2015-Paper-Parameterized_Diamond_Tiling_for_Stencil_Computations_with_Chapel_Parallel_Iterators.pdf"
+  slides="https://chapel-lang.org/presentations/ICS2015-Bertolacci.pdf"
+
+[[historicalPapers]]
+  title="The Cascade High Productivity Language"
+  authors="David Callahan, Bradford L. Chamberlain, Hans P. Zima"
+  venue="In 9th International Workshop on High-Level Parallel Programming Models and Supportive Environments (HIPS 2004), pages 52-60. IEEE Computer Society"
+  date="April 2004"
+  description="This is the original Chapel paper which lays out some of our motivation and foundations for exploring the language. Note that the language has evolved significantly since this paper was published, but it remains an interesting historical artifact."
+  url="https://chapel-lang.org/publications/hips04.pdf"
+  slides="https://chapel-lang.org/publications/hips04-slides.pdf"
+
 
 [[featuredPresentations]]
   title="Introducing Chapel: A Programming Language for Productive Parallel Computing from Laptops to Supercomputers"
@@ -395,6 +550,35 @@ keywords = ["TODO"]
 ### Chapel Overviews
 
 {{<publication-list "chapelOverviews">}}
+
+### Chapel Project Updates
+
+{{<publication-list "projectUpdates">}}
+
+### Chapel Optimizations
+
+{{<publication-list "optimizationPapers">}}
+
+### Applications of Chapel
+
+{{<publication-list "applicationPapers">}}
+
+### Multiresolution Chapel Features
+
+{{<publication-list "multiresolutionPapers">}}
+
+### Chapel Tools
+
+{{<publication-list "toolPapers">}}
+
+### Chapel Explorations
+
+{{<publication-list "explorationPapers">}}
+
+### Chapel Historical Papers
+
+{{<publication-list "historicalPapers">}}
+
 
 # Presentations {#presentations}
 
