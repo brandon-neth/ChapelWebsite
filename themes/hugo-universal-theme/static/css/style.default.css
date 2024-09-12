@@ -325,7 +325,6 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
   font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
@@ -2876,7 +2875,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* navbar */
 .navbar {
   position: relative;
-  min-height: 62px;
+  min-height: 80px;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
 }
