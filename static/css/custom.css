@@ -356,19 +356,34 @@ a:hover .social-name {
   padding-top: 27px;
   min-height: inherit;
 }
-/*
-.navbar {
-  min-height: 86px;
+
+.release-number {
+  font-size: 1.4em;
+  line-height: 1.5;
 }
-.navbar .container {
-  min-height: 86px;
+.release-number a {
+  font-weight: bold;
 }
-.navbar img {
-  min-height: 70px;
-  margin-top: 6px;
+
+
+
+.code {
+  margin-top: 20px;
+}
+
+.radio-code-selector {
+  font-size: 1.35em;
   margin-bottom: 8px;
 }
 
-.navbar .dropdown {
-  min-height: 86px;
-}*/
+.radio-button-grid {
+  min-height: 50px;
+  border-left: solid 5px var(--chapel-white);
+  padding-top: 12px;
+  margin-bottom: 0px;
+}
+
+.radio-button-grid.selected {
+  background-color: var(--chapel-light-green);
+  border-left: solid 5px var(--chapel-blue);
+}
