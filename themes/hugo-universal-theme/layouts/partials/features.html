@@ -4,24 +4,21 @@
 {{ if gt (len .Site.Data.features) 0 }}
 <section class="bar background-navy">
     <div class="container">
-        {{ $elements := default 3 .Site.Params.features.cols }}
+        {{ $elements := default 1 .Site.Params.features.cols }}
         {{ $features := sort .Site.Data.features "weight" }}
-
         {{ $total_rows := div (len $features) $elements }}
 
         {{ if gt (mod (len $features) $elements) 0 }}
           {{ $total_rows = add $total_rows 1 }}
         {{ end }}
 
-        {{ range $i, $sequence := seq $total_rows }}
-          <div class="grid row row-{{ $i }} row-{{ if eq (mod $i 2) 0 }}odd{{ else }}even{{ end }}">
-            {{ range $j, $sequence2 := (seq $elements) }}
+        
 
-                {{ $feature_index := add (mul $i $elements) $j }}
-                {{ if lt $feature_index (len $features) }}
-                    {{ $element := index $features $feature_index }}
+          <div class="row">
 
-                    <div class="grid-item col-md-{{ div 12 $elements }} col-{{ $j }} col-{{ if eq (mod $j 2) 0 }}odd{{ else }}even{{ end }}">
+                    {{ range $i, $element := $features }}
+
+                    <div class="feature-item col-md-{{ div 12 $elements }} col-sm-6 col-xs-12">
                         
 
                         {{ with $element.url }}
@@ -38,10 +35,9 @@
                         {{ end }}
                         
                     </div>
-                {{ end }}
             {{ end }}
           </div>
-        {{ end }}
+
     </div>
 </section>
 {{ end }}
