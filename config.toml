@@ -219,7 +219,7 @@ pluralizelisttitles = false
     logo = "img/chapel-logo.svg"
     name_logo = "img/ChapelName.png"
     logo_small = "img/chapel-logo.svg"
-    tagline="Productive parallel computing at any scale."
+    tagline="Productive parallel computing at every scale."
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
 
