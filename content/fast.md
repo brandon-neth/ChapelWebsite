@@ -10,8 +10,8 @@ keywords = ["TODO"]
   weight=0
 
 [[singleNodeResult]]
-  title="Navier-Stokes Solver"
-  description="Chapel solutions to the Navier-Stokes equation outperform C++ solutions while requiring less code overall."
+  title="Poisson Solver"
+  description="Chapel solutions to Poisson's equation outperform C++ solutions while requiring less code overall."
   image="/img/perf/navier-stokes.png"
   url="https://chapel-lang.org/blog/posts/bns2/"
 [[singleNodeResultNotReady]]
@@ -58,7 +58,7 @@ keywords = ["TODO"]
 
 [[fastFeatures]]
   name="Sparse array operations"
-  description="Easily write and parallelize applications using sparse matrices"
+  description="Sparse array support makes it easier to write and parallelize applications working with gigantic data."
   url="https://chapel-lang.org/docs/modules/layouts/LayoutCS.html"
 
 [[fastFeatures]]
@@ -77,6 +77,3 @@ keywords = ["TODO"]
 
 {{<grid "fastFeatures">}}
 
-### And Even Faster with Flags
-
-{{<grid compilerOptimizations>}}
