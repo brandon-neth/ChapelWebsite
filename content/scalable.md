@@ -5,7 +5,7 @@ keywords = ["TODO"]
 
 [[reasons]]
   name = "Global View of Data"
-  description="Chapel builds distributed arrays into the array interface, meaning code for a single node runs effortlessly on an entire cluster."
+  description="Chapel builds distributed arrays into the array interface, meaning code written for a single node can run on an entire cluster."
   url="https://chapel-lang.org/docs/language/spec/domain-maps.html"
 [[reasons]]
   name = "Multi-level Parallelism"
@@ -44,13 +44,13 @@ keywords = ["TODO"]
 
 +++
 
-Workflows written using Chapel scale enormously. The same code written on your laptop will perform on however many nodes you can give it, be it one, dozens, or thousands. Arkouda, a Chapel application for data analysis at scale, scales effortlessly to more than 8000 nodes. The largest supercomputers in the world use Chapel. You can too. 
+Workflows written using Chapel scale enormously. The same code written on your laptop will perform on however many nodes you can give it, be it one, dozens, or thousands. Arkouda, a Chapel application for data analysis at scale, scales to more than 8000 nodes. The largest supercomputers in the world use Chapel. You can too. 
 {.content-paragraph}
 
 # Scaling Results with Chapel
 
 {{<switcher "perfResults">}}
 
-# Why Chapel Makes Scaling Easy
+# Why Chapel Makes Scaling Easier
 
 {{<grid "reasons">}}
