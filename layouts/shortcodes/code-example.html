@@ -28,7 +28,7 @@
           {{ range $items }}
             <div class="sample-wrapper-div">
               <label class="radio-code-selector" for="radio2-{{ .name }}">
-                <input type="radio" id="radio2-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .first "true" }}checked{{ end }}>
+                <input type="radio" id="radio2-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .second "true" }}checked{{ end }}>
                 {{ .name }}
               </label>
             </div>
