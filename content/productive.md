@@ -1,5 +1,5 @@
 +++
-title = "Accelerate Development with a Productive HPC Language"
+title = "Accelerate Development with a Productive Parallel Language"
 description = "Productive Computing with the Chapel programming language"
 keywords = ["TODO"]
 
@@ -15,7 +15,6 @@ keywords = ["TODO"]
 [[languageFeatures]]
   name = "Memory Safety"
   description = "Scope-based (de)allocation, ownership management, default-safe strings, and other semantic checks make Chapel safer than C and C++."
-  url="https://chapel-lang.org/docs/usingchapel/compiling.html#most-useful-flags"
 
 [[highlightGrid]]
   name="Language Tooling Support"
@@ -42,8 +41,13 @@ keywords = ["TODO"]
   description="Chapel implementations of parallel metaheuristic algorithms are more productive that other Julia, Python, and OpenMP reference implementations"
   image="/img/RelativeProductivity.png"
   url="https://inria.hal.science/hal-02879767"
-  weight=2
+  weight=3
 
+[[result]]
+  title="Parallel Heat Equation"
+  description="Chapel outperforms other modern languages in both productivity and performance."
+  image="/img/heat-productivity.png"
+  weight=2
 [[introText]]
 text="Gone are the days of a codebase where the actual purpose of your code are overshadowed by all the MPI calls required to make it work. Chapel has powerful, succinct programming constructs for targeting all kinds of parallelism at all kinds of scales. From data parallelism to task parallelism and laptop to GPU to cluster, Chapel uses a unified set of language features so you can learn them once and use them again and again."
 
