@@ -109,11 +109,7 @@ pluralizelisttitles = false
     url        = "https://chapel-lang.org/blog"
     weight     = 8
 
-[[menu.main]]
-    name       = "Try"
-    identifier = "section.try"
-    url        = "https://ato.pxeger.com/run?1=m70sOSOxIDVnwYKlpSVpuhY7y4syS1Jz8jSUPFJzcvJ1FMrzi3JSFJU0rSHyUGUw5QA"
-    weight     = 7
+
 
 
 
