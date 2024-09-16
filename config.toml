@@ -86,22 +86,24 @@ pluralizelisttitles = false
     weight     = 5
 
 [[menu.main]]
+    name       = "Tutorials"
+    url        = "/resources#tutorials"
+    weight     = 1
+    parent     = "menu.resources"
+    
+[[menu.main]]
     name       = "Papers"
     url        = "/resources#papers"
-    weight     = 1
+    weight     = 2
     parent     = "menu.resources"
 
 [[menu.main]]
     name       = "Presentations"
     url        = "/resources#presentations"
-    weight     = 2
-    parent     = "menu.resources"
-
-[[menu.main]]
-    name       = "Tutorials"
-    url        = "/resources#tutorials"
     weight     = 3
     parent     = "menu.resources"
+
+
 
 [[menu.main]]
     name       = "Community"
