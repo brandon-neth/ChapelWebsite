@@ -9,9 +9,9 @@ keywords = ["TODO"]
   description="Language-level support for parsing command line arguments, at both compile-time and run-time."
   url="https://chapel-lang.org/docs/primers/variables.html#configs"
 [[languageFeatures]]
-  name = "Parallel loops"
-  description="Chapel is designed to easily express all types of parallel algorithms with built-in language features"
-  url="../parallel"
+  name = "Interoperability"
+  description="Chapel is designed to interoperate seamlessly with libraries written in C. No need to rewrite important libraries."
+  url="https://chapel-lang.org/docs/technotes/extern.html"
 [[languageFeatures]]
   name = "Memory Safety"
   description = "Scope-based (de)allocation, ownership management, default-safe strings, and other semantic checks make Chapel safer than C and C++."

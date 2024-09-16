@@ -21,13 +21,14 @@
                           <div class="col-sm-6 right">
                               <h2>{{ .name }}</h2>
                               <h4>{{ .tagline }} </h4>
-                              {{ .text | safeHTML }}
+                              <p>{{ .text | safeHTML }}</p>
 
+                                <a href="{{ .url }}">
+                                  <div class="application-button">Learn More</div>
+                                </a>
                           </div>
                           <div class="col-sm-6">
-                              <a href="{{ .url }}">
                               <img class="img-responsive" src="{{ .image }}" alt="" style="padding-right: 30px; max-height: 20em;">
-                              </a>
                           </div>
                       </div>
                   {{ if .href }}
