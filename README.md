@@ -128,6 +128,25 @@ Note that two items in the same list can have different fields. In general, the 
 ### `grid`
 
 The `grid` shortcode creates a grid of cards like that used for the attributes on the homepage. It takes a single argument, the name of the list of elements to render. Each element should have the following fields:
-- `name`
--
+- `name`: the title to display on the card
+- `description`: the text to display under the title
+- `url`: the link for when the card is clicked on
+
+### `switcher`
+
+This shortcode creates the carousel used throughout the attribute pages. Each element requires the following fields:
+- `title`: The title to display
+- `description`: The description to display below the title
+- `image`: A path to the image to display to the right of the text
+- `url`: a link to take the user to when clicking
+- `weight`: a weight used to sort the elements on the carousel
+
+### `code-switcher`
+
+This shortcode creates the code switcher used to compare between different versions of a code. Each element requires the following field:
+- `name`: the name to use on the radio button
+- `lang`: The language this piece of code is implemented in
+- `codeFile`: A path to the file containing the code example
+
+One of the elements should have the field `first="true` and one should have the field `second="true"`. This is how the default selection is determined for the two switchers.
 
