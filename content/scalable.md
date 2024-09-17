@@ -41,6 +41,14 @@ keywords = ["TODO"]
   description="Measures the performance of concurrent random updates of a distributed array."
   image = "img/perf/perf-random-access.png"
   weight = 3
+[[perfResults]]
+  title="Multi-core Scaling"
+  description=""
+
+[[perfResults]]
+  title="GPU Scaling"
+  description=""
+  
 
 +++
 

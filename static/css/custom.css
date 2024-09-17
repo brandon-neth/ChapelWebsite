@@ -399,23 +399,23 @@ a:hover .social-name {
 
 
 @media (max-width: 768px) {
-  .feature-item.box-simple {
+  .attribute-item.box-simple {
     min-height: 257px;
   }
 }
 
-.feature-item .box-simple {
+.attribute-item .box-simple {
   min-height: 210px;
 }
 
 @media (min-width: 600px) {
-  .feature-item .box-simple {
+  .attribute-item .box-simple {
     min-height: 210px;
   }
 }
 
 @media (min-width: 768px) {
-  .feature-item .box-simple {
+  .attribute-item .box-simple {
     min-height: 257px;
   }
 }
