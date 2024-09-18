@@ -14,11 +14,16 @@ This README covers the following topics:
 
 ## Building and Viewing a Local Version
 
-The website is built using `hugo`. 
+The website is built using `hugo`. It also uses a python script to gather the content for the "From our Blog" section. 
 
 Installing `hugo` on macOS: 
 ```
 brew install hugo
+```
+
+Generating the blog content information:
+```
+python3 process_rss.py
 ```
 
 Building the website, run from the `ChapelWebsite` directory:
