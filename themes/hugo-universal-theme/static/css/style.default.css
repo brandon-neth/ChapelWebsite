@@ -325,7 +325,6 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
   font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
@@ -1150,7 +1149,7 @@ fieldset[disabled] .btn-template-primary.active {
   line-height: 25px;
   margin: 0 5px 0 0;
   font-size: 18px;
-  color: var(--primary-accent);
+  color: var(--chapel-navy);
   padding: 0;
   background: #fff;
   border-radius: 13px;
@@ -1173,7 +1172,7 @@ fieldset[disabled] .btn-template-primary.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--primary-accent);
+  background: var(--chapel-navy);
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
@@ -1551,34 +1550,6 @@ fieldset[disabled] .btn-template-primary.active {
   color: #fff;
 }
 
-.quote {
-  margin-bottom: 40px;
-  padding: 20px;
-  padding-top: 10px;
-}
-
-.hide-quote {
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-
-.show-quote {
-  opacity: 1;
-  transition: all 1s;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-  .hide-quote {
-    transition: none;
-  }
-  .show-quote {
-    transition: none;
-  }
-}
 
 .box-image {
   position: relative;
@@ -2904,7 +2875,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* navbar */
 .navbar {
   position: relative;
-  min-height: 62px;
+  min-height: 80px;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
 }

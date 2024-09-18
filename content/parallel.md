@@ -20,7 +20,7 @@ keywords = ["TODO"]
 
 [[parallelFeatures]]
   name="Atomics"
-  description="Chapel supports native `atomic` types, ensuring your code is race-condition free."
+  description="Chapel's native `atomic` types provide a hardware-supported way to coordinate tasks."
   url="https://chapel-lang.org/docs/primers/atomics.html"
 
 [[parallelFeatures]]
@@ -44,16 +44,25 @@ keywords = ["TODO"]
   url="https://chapel-lang.org/docs/language/spec/index.html#distributed-programming"
 
 [[parallelismTypes]]
-  name="GPU Parallelism"
+  name="CPU and GPU Parallelism"
   description="Update a handful of lines of code and your application will be ready for GPU execution."
-  url="/gpu"
+  url="../gpu"
+
 +++
 
-Cascade is built from the ground up with productive and performance parallel computing in mind. High-performance computing applications leverage parallelism at different scales: distributed-memory parallelism between nodes and shared-memory and GPU acceleration within nodes. Conventionally, using all three requires three different programming models with three different interfaces. Cascade programs can leverage all three with a single unified set of language features. 
+
+
+# Parallelism at Any Scale
+
+Chapel is built from the ground up with productive and performance parallel computing in mind. Conventionally, leveraging parallelism at different scales requires different programming models with different interfaces. Chapel programs can leverage the three types of parallelism with a single unified set of language features:
+{.content-paragraph}
 
 {{<grid "parallelismTypes">}}
 
-Conventional distributed programming requires programmers to write their code in terms of individual processes, manually coordinating all communication between each node. Distributed programming doesn't have to be this way, and Cascade's _global-view programming_ is the perfect alternative. You can declare and compute on distributed data structures with the same code you would use for a completely local version. Keep the performance of distributed parallelism, lose the finicky gets and puts. Or don't! If you need, you can distribute data and coordinate message passing manually, or mix manual control with global-view programming. The beauty of Cascade is that you can choose the level(s) of abstraction best fit for your project.
+# Parallel Programming Features that Fit Together
+
+Conventional distributed programming requires programmers to write their code in terms of individual processes, manually coordinating all communication between each node. Distributed programming doesn't have to be this way, and Chapel's _global-view programming_ is the perfect alternative. You can declare and compute on distributed data structures with the same code you would use for a completely local version. __Keep the performance of distributed parallelism, lose the finicky gets and puts. Or don't!__ If you need, you can distribute data and coordinate message passing manually, or mix manual control with global-view programming. The beauty of Chapel is that you can choose the level(s) of abstraction best fit for your project.
+{.content-paragraph}
 
 {{<grid "parallelFeatures">}}
 

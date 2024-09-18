@@ -1,4 +1,4 @@
-baseurl = "chapel-lang.org"
+baseURL = "https://brandon-neth.github.io/ChapelWebsite/"
 title = "The Chapel Programming Language"
 
 theme = "hugo-universal-theme"
@@ -30,30 +30,6 @@ pluralizelisttitles = false
     weight     = 1
 
 [[menu.main]]
-    name       = "Source"
-    url        = "/download#source"
-    weight     = 1
-    parent     = "menu.download"
-
-[[menu.main]]
-    name       = "Spack"
-    url        = "/download#spack"
-    weight     = 2
-    parent     = "menu.download"
-
-[[menu.main]]
-    name       = "Docker"
-    url        = "/download#docker"
-    weight     = 3
-    parent     = "menu.download"
-
-[[menu.main]]
-    name       = "Homebrew"
-    url        = "/download#homebrew"
-    weight     = 4
-    parent     = "menu.download"
-
-[[menu.main]]
     name       = "Docs"
     identifier = "menu.docs"
     url        = "https://chapel-lang.org/docs/"
@@ -78,15 +54,21 @@ pluralizelisttitles = false
     parent     = "menu.docs"
 
 [[menu.main]]
+    name       = "Modules"
+    url        = "https://chapel-lang.org/docs/modules/standard.html"
+    weight     = 4
+    parent     = "menu.docs"
+
+[[menu.main]]
     name       = "Developer/Contributor Docs"
     url        = "https://chapel-lang.org/docs/developer/index.html"
-    weight     = 4
+    weight     = 5
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Technical Notes"
     url        = "https://chapel-lang.org/docs/technotes/index.html"
-    weight     = 5
+    weight     = 6
     parent     = "menu.docs"
 
 
@@ -104,22 +86,24 @@ pluralizelisttitles = false
     weight     = 5
 
 [[menu.main]]
+    name       = "Tutorials"
+    url        = "/resources#tutorials"
+    weight     = 1
+    parent     = "menu.resources"
+    
+[[menu.main]]
     name       = "Papers"
     url        = "/resources#papers"
-    weight     = 1
+    weight     = 2
     parent     = "menu.resources"
 
 [[menu.main]]
     name       = "Presentations"
     url        = "/resources#presentations"
-    weight     = 2
-    parent     = "menu.resources"
-
-[[menu.main]]
-    name       = "Tutorials"
-    url        = "/resources#tutorials"
     weight     = 3
     parent     = "menu.resources"
+
+
 
 [[menu.main]]
     name       = "Community"
@@ -133,11 +117,7 @@ pluralizelisttitles = false
     url        = "https://chapel-lang.org/blog"
     weight     = 8
 
-[[menu.main]]
-    name       = "Try"
-    identifier = "section.try"
-    url        = "https://ato.pxeger.com/run?1=m70sOSOxIDVnwYKlpSVpuhY7y4syS1Jz8jSUPFJzcvJ1FMrzi3JSFJU0rSHyUGUw5QA"
-    weight     = 7
+
 
 
 
@@ -247,10 +227,7 @@ pluralizelisttitles = false
     logo = "img/chapel-logo.svg"
     name_logo = "img/ChapelName.png"
     logo_small = "img/chapel-logo.svg"
-    contact_url = ""
-    address = """
-      """
-
+    tagline="Productive parallel computing at every scale."
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
 
@@ -288,16 +265,10 @@ pluralizelisttitles = false
 [params.topgrid]
     enable = true
     cols = 3 # Default: 3, Available values 2,3,4,6
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more information take a look at the README.
 
-[params.features]
+[params.attributes]
     enable = true
     cols = 3 # Default: 3, Available values 2,3,4,6
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more information take a look at the README.
 
 
 

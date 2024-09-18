@@ -9,6 +9,11 @@ keywords = ["TODO"]
   url="https://chapel-lang.org/blog/posts/std-sort-performance/"
   weight=0
 
+[[singleNodeResult]]
+  title="Poisson Solver"
+  description="Chapel solutions to Poisson's equation outperform C++ solutions while requiring less code overall."
+  image="/img/perf/navier-stokes.png"
+  url="https://chapel-lang.org/blog/posts/bns2/"
 [[singleNodeResultNotReady]]
   name="N-Body Simulation"
   description="TODO"
@@ -30,11 +35,21 @@ keywords = ["TODO"]
   image=""
   weight=5
 
+[[compilerOptimizations]]
+  name="Bundled Optimizations"
+  description="The `--fast` flag turns on a collection of optimizations and passes optimization flags to the backend code generator for faster code every time."
+  url="https://chapel-lang.org/docs/usingchapel/man.html"
 
 [[compilerOptimizations]]
   name="Automatic aggregation"
-  description="TODO"
-  url="TODO"
+  description="Improve communication performance with the `--auto-aggregation` flag."
+  url="https://chapel-lang.org/docs/usingchapel/man.html"
+
+[[compilerOptimizations]]
+  name="Vectorization"
+  description="Pass vectorization hints to the target compiler with the `--vectorize` flag."
+  url="https://chapel-lang.org/docs/usingchapel/man.html"
+
 
 [[fastFeatures]]
   name="Array Reductions"
@@ -43,23 +58,22 @@ keywords = ["TODO"]
 
 [[fastFeatures]]
   name="Sparse array operations"
-  description="TODO"
-  url="TODO"
+  description="Sparse array support makes it easier to write and parallelize applications working with gigantic data."
+  url="https://chapel-lang.org/docs/modules/layouts/LayoutCS.html"
 
 [[fastFeatures]]
   name="Parallel IO"
   description="Use every core with built-in support for parallel file IO."
-  url="TODO"
+  url="https://chapel-lang.org/docs/modules/packages/ParallelIO.html"
+
+
 +++
 
 ### Competes at _All_ Scales, Even the Smaller Ones
 
 {{<switcher "singleNodeResult">}}
 
-### Fast Out of the Box...
+### Fast Out of the Box
 
 {{<grid "fastFeatures">}}
 
-### And Even Faster with Flags
-
-{{<grid compilerOptimizations>}}
