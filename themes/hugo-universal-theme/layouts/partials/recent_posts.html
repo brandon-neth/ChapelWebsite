@@ -13,42 +13,43 @@
             </p>
 
             <!-- *** BLOG HOMEPAGE *** -->
-            {{ $posts := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-            {{ $posts := sort $posts.Pages "Date" "desc"}}
+            {{ $posts := .Site.Data.rss }}
+            {{ $posts := sort $posts "date" "desc"}}
             <div class="blog">
                 {{ range first 4 $posts }}
                 <div class="blog-post-row">
                     <div class="blog-image">
                         <div class="top">
-                            {{ if isset .Params "banner" }}
-                            <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
+                            {{ if isset . "banner" }}
+                            <img src="{{ .banner | relURL }}" class="img-responsive" alt="" >
                             {{ else }}
                             <img src="{{ "img/chapel-logo-nowords.png" | relURL }}" class="img-responsive" alt="">
                             {{ end }}
                         </div>
                     </div>
                     <div class="blog-post-text">
-                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                        <h4><a href="{{ .url }}">{{ .title }}</a></h4>
                         <p class="author-category">
-                            {{ if isset .Params "authors" }}
-                                {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "%s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
+                            {{ if isset . "authors" }}
+                                {{ $comma := false }}
+                                {{ i18n "authorBy" }} {{ range $author := .authors }}{{ if $comma }}, {{ end }}<a href="{{ $author.url }}">{{ $author.name }}</a>{{ $comma = true }}{{ end }}
                             {{ end }}
-                            {{ if .Params.date }}
-                                {{ $createdAt := .Date.Format .Site.Params.date_format }}
+                            {{ if .date }}
+                                {{ $createdAt := (.date | time).Format site.Params.date_format }}
                                 {{ range $index, $month := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
                                     {{ $createdAt = replace $createdAt $month (i18n $month) }}
                                 {{ end }}
                                 {{ i18n "publishedOn" }} {{ $createdAt }}
                             {{ end }}
                         </p>
-                        <p class="intro">{{ .Summary }}</p>
+                        <p class="intro">{{ .description }}</p>
                         <p class="read-more">
-                            <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                            <a href="{{ .url }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
                         </p>
                     </div>
                 </div>
                 {{ end }}
-        </div>
+            </div>
 
             <!-- *** BLOG HOMEPAGE END *** -->
 
