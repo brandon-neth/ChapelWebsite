@@ -450,3 +450,17 @@ a:hover .social-name {
   transition: all 0.2s ease;
   background-color: var(--chapel-light-green);
 }
+
+
+
+details summary h4::after {
+  content: "\25B8";
+  color: var(--chapel-blue);
+}
+details[open] summary h4::after {
+  content: "\25BE";
+}
+
+details .toggle-list-contents{
+  margin-left: 20px;
+}
