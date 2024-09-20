@@ -8,6 +8,7 @@ This README covers the following topics:
   - User testimonials
   - "Chapel in production" applications
   - Attribute cards
+  -  Announcements
 - Updating the attribute pages
 - Adding new elements to the resources page
 
@@ -71,6 +72,15 @@ The examples for Chapel in Production section is controlled by the `params.appli
 - a `image` field with the path of the image to use for the project
 - a `url` field with a link to more information about the project
 - a `weight` field to order the applications in the carousel
+
+### Announcements
+
+To add new announcments to the list of announcements, add a file to the `data/announcements` directory. The file should be `.yaml` file with the following fields:
+- a `title` field with the title of the announcement
+- a `description` field with the announcement body
+- a `date` field with the date of the announcement, in the format YYYY-MM-DD
+- a `url` field with a link for the "Continue Reading" button
+- an `authors` field, which should be a list of authors. Each author entry needs at least a `name` entry, and can optionally have a `url` entry.
 
 ## Updating the Attribute Pages
 

@@ -3,33 +3,25 @@
     {{ site.Title }} 
   </h2>
   <div class="release-number" style="text-align: center; margin-top: 0px; text-decoration: none">
-    Latest Release: <a href={{site.Params.versionURL}}>v{{ site.Params.version}}</a>
+    {{ site.Params.tagline }}
   </div>
-  <div class="container" style="padding-top: 20px">
-    <div class="col-md-1 col-0 col-even"></div>
-    <div class="col-md-3 col-0 col-even">
-      
-      <h3 style="text-align: center">
-        {{ site.Params.tagline }}
-      </h3>
+  <div class="container code-example" id="first-comparison" style="padding-top: 20px">
+    <div class="col-md-4 col-0 col-even">
+      <fieldset>
+        {{ range .Site.Params.codes }}
+        <div class="col-md-12 radio-button-grid" data-for-sample="{{ .name }}">
+          <div class="radio-button-wrapper">
+            <label class="radio-code-selector" for="radio-{{ .name }}">
+              <input type="radio" id="radio-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .default "true" }}checked{{ end }}>
+              {{ .name }}
+            </label>
+          </div>
+        </div>
+        {{ end }}
+      </fieldset>
     </div>
     
     <div class="col-md-8 col-1 col-odd">
-
-      <div class="code-example" id="first-comparison">
-
-        <fieldset>
-          {{ range .Site.Params.codes }}
-          <div class="col-md-6 radio-button-grid" data-for-sample="{{ .name }}">
-            <div class="radio-button-wrapper">
-              <label class="radio-code-selector" for="radio-{{ .name }}">
-                <input type="radio" id="radio-{{ .name }}" value="{{ .name }}" name="code-sample" {{ if eq .default "true" }}checked{{ end }}>
-                {{ .name }}
-              </label>
-            </div>
-          </div>
-          {{ end }}
-        </fieldset>
         {{ range .Site.Params.codes }}
           <div class="code" data-for-sample="{{ .name }}">{{ highlight .code "Chapel" }}</div>
         {{ end }}
@@ -69,12 +61,6 @@
 
     
       </script>
-    
-      <div class="buttons">
-        {{ range .Params.buttons }}
-          <a href="{{ .url }}" class="button{{ if .primary }} primary{{ end }}">{{ if .icon }}{{ partial "icon" .icon }}{{ end }}{{ .name }}</a>
-        {{ end }}
-      </div>
     </div>
   </div>
 

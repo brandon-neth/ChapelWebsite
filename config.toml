@@ -291,12 +291,10 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
+    title = "What's New?"
     subtitle = ""
     hide_summary = false
 
-[params.footer.recent_posts]
-    enable = true
 
 [taxonomies]
   category = "categories"

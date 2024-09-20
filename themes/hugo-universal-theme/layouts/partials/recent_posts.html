@@ -14,6 +14,11 @@
 
             <!-- *** BLOG HOMEPAGE *** -->
             {{ $posts := .Site.Data.rss }}
+
+            {{ range $fileName, $postData := .Site.Data.announcements }}
+                {{ $posts = $posts | append $postData }}
+            {{ end }}
+            
             {{ $posts := sort $posts "date" "desc"}}
             <div class="blog">
                 {{ range first 4 $posts }}
@@ -32,7 +37,9 @@
                         <p class="author-category">
                             {{ if isset . "authors" }}
                                 {{ $comma := false }}
-                                {{ i18n "authorBy" }} {{ range $author := .authors }}{{ if $comma }}, {{ end }}<a href="{{ $author.url }}">{{ $author.name }}</a>{{ $comma = true }}{{ end }}
+                                {{ i18n "authorBy" }} 
+                                <!-- This is all one line to get the comma to not have a space before it -->
+                                {{ range $author := .authors }}{{ if $comma }}, {{ end }}{{ if $author.url }}<a href="{{ $author.url }}">{{ end }}{{ $author.name }}{{ if $author.url }}</a>{{ end }}{{ $comma = true }}{{ end }}
                             {{ end }}
                             {{ if .date }}
                                 {{ $createdAt := (.date | time).Format site.Params.date_format }}
