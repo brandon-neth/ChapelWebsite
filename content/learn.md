@@ -70,12 +70,12 @@ keywords = ["FAQ","How do I","questions","what if"]
 
 [[recommended]]
   name="Introductory Tutorial"
-  description="Start with this ChapelCon '24 tutorial to learn about the basics of Chapel, including how to compile and run Chapel programs."
-  url="https://www.youtube.com/watch?v=N2LWN3A9rck"
+  description="Start with this ChapelCon '24 tutorial to learn about the basics of Chapel, including how to compile and run Chapel programs. This tutorial works through a heat diffusion simulation."
+  url="resources/#tutorials"
 
 [[recommended]]
   name="Parallel Programming in Chapel"
-  description="Learn to use Chapel to scale your workflow with Alex Razoumov's 3 part course on parallel programming in Chapel."
+  description="Learn about how Chapel can scale complex dynamics programs with Alex Razoumov's 3 part course on parallel programming in Chapel."
   url="https://wgpages.netlify.app/chapel/"
 
 [[recommended]]
