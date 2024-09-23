@@ -32,42 +32,42 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Docs"
     identifier = "menu.docs"
-    url        = "https://chapel-lang.org/docs/"
+    url        = "/docs"
     weight     = 3
 
 [[menu.main]]
     name       = "Quickstart Instructions"
-    url        = "https://chapel-lang.org/docs/usingchapel/QUICKSTART.html"
+    url        = "/docs/usingchapel/QUICKSTART.html"
     weight     = 1
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Language Spec"
-    url        = "https://chapel-lang.org/docs/language/spec/index.html"
+    url        = "docs/language/spec/index.html"
     weight     = 2
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Primers"
-    url        = "https://chapel-lang.org/docs/primers/index.html"
+    url        = "docs/primers/index.html"
     weight     = 3
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Modules"
-    url        = "https://chapel-lang.org/docs/modules/standard.html"
+    url        = "docs/modules/standard.html"
     weight     = 4
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Developer/Contributor Docs"
-    url        = "https://chapel-lang.org/docs/developer/index.html"
+    url        = "docs/developer/index.html"
     weight     = 5
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Technical Notes"
-    url        = "https://chapel-lang.org/docs/technotes/index.html"
+    url        = "docs/technotes/index.html"
     weight     = 6
     parent     = "menu.docs"
 
@@ -114,7 +114,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Blog"
     identifier = "section.blog"
-    url        = "https://chapel-lang.org/blog"
+    url        = "/blog"
     weight     = 8
 
 
@@ -126,7 +126,7 @@ pluralizelisttitles = false
 
 [params]
     version="2.1"
-    versionURL="https://chapel-lang.org/blog/posts/announcing-chapel-2.1/"
+    versionURL="blog/posts/announcing-chapel-2.1/"
     mainSections = ["blog"]
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
