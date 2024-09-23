@@ -1,4 +1,4 @@
-baseURL = "https://brandon-neth.github.io/ChapelWebsite/"
+baseURL = "https://www.chapel-lang.org"
 title = "The Chapel Programming Language"
 
 theme = "hugo-universal-theme"
@@ -123,54 +123,6 @@ pluralizelisttitles = false
 
 # Top bar social links menu
 
-
-[[menu.socials]]
-    weight = 1
-    name = "GitHub"
-    url = "https://github.com/chapel-lang/chapel"
-    identifier = "img/socials/github.png"
-
-[[menu.socials]]
-    weight = 2
-    name = "X (Twitter)"
-    url = "https://x.com/ChapelLanguage"
-    identifier = "img/socials/twitter.png"
-
-[[menu.socials]]
-    weight = 3
-    name = "YouTube"
-    url="https://www.youtube.com/@ChapelLanguage"
-    identifier = "img/socials/youtube.png"
-
-[[menu.socials]]
-    weight = 4
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/company/chapellanguage"
-    identifier = "img/socials/linkedin.png"
-
-[[menu.socials]]
-    weight = 5
-    name = "Mastodon"
-    url = "https://mastodon.social/@chapelprogramminglanguage"
-    identifier = "img/socials/mastodon.png"
-
-[[menu.socials]]
-    weight = 6
-    name = "Discourse"
-    url = "https://chapel.discourse.group/"
-    identifier = "img/socials/discourse.png"
-
-[[menu.socials]]
-    weight = 7
-    name = "Gitter"
-    url = "https://gitter.im/chapel-lang/chapel"
-    identifier = "img/socials/gitter.png"
-
-[[menu.socials]]
-    weight = 8
-    name = "Facebook"
-    url = "https://www.facebook.com/ChapelLanguage"
-    identifier = "img/socials/facebook.png"
 
 [params]
     version="2.1"
@@ -388,3 +340,51 @@ proc main() {
 """
 
 
+
+[[params.socials]]
+    weight = 1
+    name = "GitHub"
+    url = "https://github.com/chapel-lang/chapel"
+    image = "img/socials/github.png"
+
+[[params.socials]]
+    weight = 2
+    name = "X (Twitter)"
+    url = "https://x.com/ChapelLanguage"
+    image = "img/socials/twitter.png"
+
+[[params.socials]]
+    weight = 3
+    name = "YouTube"
+    url="https://www.youtube.com/@ChapelLanguage"
+    image = "img/socials/youtube.png"
+
+[[params.socials]]
+    weight = 4
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/chapellanguage"
+    image = "img/socials/linkedin.png"
+
+[[params.socials]]
+    weight = 5
+    name = "Mastodon"
+    url = "https://mastodon.social/@chapelprogramminglanguage"
+    image = "img/socials/mastodon.png"
+
+[[params.socials]]
+    weight = 6
+    name = "Discourse"
+    url = "https://chapel.discourse.group/"
+    image = "img/socials/discourse.png"
+
+[[params.socials]]
+    weight = 7
+    name = "Gitter"
+    url = "https://gitter.im/chapel-lang/chapel"
+    image = "img/socials/gitter.png"
+
+[[params.socials]]
+    weight = 8
+    name = "Facebook"
+    url = "https://www.facebook.com/ChapelLanguage"
+    image = "img/socials/facebook.png"
