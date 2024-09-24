@@ -45,7 +45,7 @@ keywords = ["FAQ","How do I","questions","what if"]
 
 [[code]]
   title=""""I'd like to read a 'learn X in Y Minutes' style introduction to Chapel.""""
-  description="""See [**Learn Chapel in Y Minutes**](https://learnxinyminutes.com/docs/chapel/)."""
+  description="""See [**Learn Chapel in Y Minutes**](https://learnxinyminutes.comhttps://chapel-lang.org/docs/chapel/)."""
 
 [[code]]
   title=""""I'd like to read code examples that teach about specific Chapel concepts or features.""""
@@ -81,7 +81,7 @@ keywords = ["FAQ","How do I","questions","what if"]
 [[recommended]]
   name="Chapel Feature Primers"
   description="Learn more about specific features of the Chapel langauge with our primer series."
-  url="/docs/primers/index.html"
+  url="https://chapel-lang.org/docs/primers/index.html"
 +++
 
 ## Recommended Resources

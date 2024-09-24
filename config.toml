@@ -37,37 +37,37 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Quickstart Instructions"
-    url        = "/docs/usingchapel/QUICKSTART.html"
+    url        = "https://chapel-lang.org/docs/usingchapel/QUICKSTART.html"
     weight     = 1
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Language Spec"
-    url        = "/docs/language/spec/index.html"
+    url        = "https://chapel-lang.org/docs/language/spec/index.html"
     weight     = 2
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Primers"
-    url        = "/docs/primers/index.html"
+    url        = "https://chapel-lang.org/docs/primers/index.html"
     weight     = 3
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Modules"
-    url        = "/docs/modules/standard.html"
+    url        = "https://chapel-lang.org/docs/modules/standard.html"
     weight     = 4
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Developer/Contributor Docs"
-    url        = "/docs/developer/index.html"
+    url        = "https://chapel-lang.org/docs/developer/index.html"
     weight     = 5
     parent     = "menu.docs"
 
 [[menu.main]]
     name       = "Technical Notes"
-    url        = "/docs/technotes/index.html"
+    url        = "https://chapel-lang.org/docs/technotes/index.html"
     weight     = 6
     parent     = "menu.docs"
 
@@ -272,8 +272,9 @@ pluralizelisttitles = false
   name="Distributed Hello World"
   default="true"
   code = """
-coforall loc in Locales do on loc
+coforall loc in Locales do on loc {
   writeln("Hello World from locale ", here.id);
+}
 """
 
 

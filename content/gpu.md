@@ -27,7 +27,7 @@ keywords = ["TODO"]
 [[keyFeatures]]
   name="Portability Across Hardware"
   description="Run the same code on NVIDIA and AMD GPUs"
-  url="/docs/technotes/gpu.html#vendor-portability"
+  url="https://chapel-lang.org/docs/technotes/gpu.html#vendor-portability"
 
 [[codeExamples]]
   name = "Chapel CPU"

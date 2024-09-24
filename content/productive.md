@@ -7,11 +7,11 @@ keywords = ["TODO"]
 [[languageFeatures]]
   name = "Config variables"
   description="Language-level support for parsing command line arguments, at both compile-time and run-time."
-  url="/docs/primers/variables.html#configs"
+  url="https://chapel-lang.org/docs/primers/variables.html#configs"
 [[languageFeatures]]
   name = "Interoperability"
   description="Chapel is designed to interoperate seamlessly with libraries written in C. No need to rewrite important libraries."
-  url="/docs/technotes/extern.html"
+  url="https://chapel-lang.org/docs/technotes/extern.html"
 [[languageFeatures]]
   name = "Memory Safety"
   description = "Scope-based (de)allocation, ownership management, default-safe strings, and other semantic checks make Chapel safer than C and C++."

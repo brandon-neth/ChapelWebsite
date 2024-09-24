@@ -38,33 +38,33 @@ keywords = ["TODO"]
 [[compilerOptimizations]]
   name="Bundled Optimizations"
   description="The `--fast` flag turns on a collection of optimizations and passes optimization flags to the backend code generator for faster code every time."
-  url="/docs/usingchapel/man.html"
+  url="https://chapel-lang.org/docs/usingchapel/man.html"
 
 [[compilerOptimizations]]
   name="Automatic aggregation"
   description="Improve communication performance with the `--auto-aggregation` flag."
-  url="/docs/usingchapel/man.html"
+  url="https://chapel-lang.org/docs/usingchapel/man.html"
 
 [[compilerOptimizations]]
   name="Vectorization"
   description="Pass vectorization hints to the target compiler with the `--vectorize` flag."
-  url="/docs/usingchapel/man.html"
+  url="https://chapel-lang.org/docs/usingchapel/man.html"
 
 
 [[fastFeatures]]
   name="Array Reductions"
   description="Sum an array or check for an element in a single parallel expression. Reductions are natively supported and automatically parallelized."
-  url="/docs/primers/reductions.html#reductions"
+  url="https://chapel-lang.org/docs/primers/reductions.html#reductions"
 
 [[fastFeatures]]
   name="Sparse array operations"
   description="Sparse array support makes it easier to write and parallelize applications working with gigantic data."
-  url="/docs/modules/layouts/LayoutCS.html"
+  url="https://chapel-lang.org/docs/modules/layouts/LayoutCS.html"
 
 [[fastFeatures]]
   name="Parallel IO"
   description="Use every core with built-in support for parallel file IO."
-  url="/docs/modules/packages/ParallelIO.html"
+  url="https://chapel-lang.org/docs/modules/packages/ParallelIO.html"
 
 
 +++
