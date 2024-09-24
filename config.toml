@@ -281,6 +281,7 @@ coforall loc in Locales do on loc {
 [[params.codes]]
   name="Parallel File IO"
   code="""
+use parallelIO;
 forall elements in readDelimited("myFile.txt", t=cityTemperature) {
   /* process data */
 }
