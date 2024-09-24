@@ -32,7 +32,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Docs"
     identifier = "menu.docs"
-    url        = "/docs"
+    url        = "https://chapel-lang.org/docs"
     weight     = 3
 
 [[menu.main]]
@@ -343,13 +343,32 @@ proc main() {
 
 
 [[params.socials]]
-    weight = 1
+    weight = 2
     name = "GitHub"
     url = "https://github.com/chapel-lang/chapel"
     image = "img/socials/github.png"
 
+
 [[params.socials]]
-    weight = 2
+    weight = 4
+    name = "Discourse"
+    url = "https://chapel.discourse.group/"
+    image = "img/socials/discourse.png"
+
+[[params.socials]]
+    weight = 6
+    name = "Gitter"
+    url = "https://gitter.im/chapel-lang/chapel"
+    image = "img/socials/gitter.png"
+
+[[params.socials]]
+    weight=8
+    name="Stack Overflow"
+    url = "https://stackoverflow.com/questions/tagged/chapel"
+    image=  "img/socials/stackOverflow.png"
+
+[[params.socials]]
+    weight = 1
     name = "X (Twitter)"
     url = "https://x.com/ChapelLanguage"
     image = "img/socials/twitter.png"
@@ -361,31 +380,20 @@ proc main() {
     image = "img/socials/youtube.png"
 
 [[params.socials]]
-    weight = 4
+    weight = 5
     name = "LinkedIn"
     url = "https://www.linkedin.com/company/chapellanguage"
     image = "img/socials/linkedin.png"
 
 [[params.socials]]
-    weight = 5
+    weight = 7
     name = "Mastodon"
     url = "https://mastodon.social/@chapelprogramminglanguage"
     image = "img/socials/mastodon.png"
 
 [[params.socials]]
-    weight = 6
-    name = "Discourse"
-    url = "https://chapel.discourse.group/"
-    image = "img/socials/discourse.png"
-
-[[params.socials]]
-    weight = 7
-    name = "Gitter"
-    url = "https://gitter.im/chapel-lang/chapel"
-    image = "img/socials/gitter.png"
-
-[[params.socials]]
-    weight = 8
+    weight = 9
     name = "Facebook"
     url = "https://www.facebook.com/ChapelLanguage"
     image = "img/socials/facebook.png"
+
