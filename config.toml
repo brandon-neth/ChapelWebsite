@@ -282,18 +282,19 @@ coforall loc in Locales do on loc {
   name="Parallel File IO"
   code="""
 use parallelIO;
-forall elements in readDelimited("myFile.txt", t=cityTemperature) {
-  /* process data */
-}
 
 record cityTemperature: readDeserializable {
-  var city: string; // city name
-  var temp: real; // temperature
+  var city: string;  // city name
+  var temp: real;    // temperature
 }
 
 proc ref cityTemperature.deserialize(reader: fileReader(?), ref deserializer) throws {
-    this.city = reader.readThrough(';', stripSeparator=true);
-    this.temp = reader.read(real);
+  this.city = reader.readThrough(';', stripSeparator=true);
+  this.temp = reader.read(real);
+}
+
+forall element in readDelimited("myFile.txt", t=cityTemperature) {
+  /* process data */
 }
 """
 
@@ -304,14 +305,14 @@ const fullDomain = {0..<N};
 const interior = fullDomain.expand(-1);
 
 var u: [fullDomain] real = 1.0; 
-u[N/4..3*N/4] = 2.0; // make the middle a bit hotter
+u[N/4..3*N/4] = 2.0;  // make the middle a bit hotter
 
 var un = u;
 
 for 1..numSteps {
-  un <=> u; // swap the two arrays
-  forall i in interior do // shared-memory parallelism
+  forall i in interior do  // shared-memory parallelism
     u[i] = un[i] + alpha * (un[i-1] - 2*un[i] + un[i+1]);  
+  un <=> u; // swap the two arrays
 }
 """
 

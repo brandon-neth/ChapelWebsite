@@ -367,15 +367,17 @@ a:hover .social-name {
   min-height: inherit;
 }
 
-.release-number {
+.tagline {
   font-size: 1.4em;
   line-height: 1.5;
+  text-align: center; 
+  margin-top: 0px; 
+  text-decoration: none; 
+  margin-bottom: 10px;
 }
-.release-number a {
+.tagline a {
   font-weight: bold;
 }
-
-
 
 .code {
   margin-bottom: 20px;

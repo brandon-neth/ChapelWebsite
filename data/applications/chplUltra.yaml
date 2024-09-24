@@ -1,4 +1,4 @@
-text: "Simulates the astrophysical dynamics of ultra-light dark matter using Chapel's support for distributed FFTs. Scales to hundreds of nodes."
+text: "Simulates the astrophysical dynamics of ultra-light dark matter using Chapel's productivity features to compute distributed FFTs. Scales to hundreds of nodes."
 name: "ChplUltra"
 url: "https://physics.yale.edu/news/luna-zagorac-successfully-defends-thesis-light-dark-ultralight-dark-matter-phenomenology"
 weight: 3
