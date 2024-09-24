@@ -46,7 +46,7 @@ keywords = ["TODO"]
 [[LiveEvents]]
   name="ChapelCon (formerly CHIUW)"
   description="An annual event featuring Chapel-related talks, tutorials, and other sesions"
-  url="https://chapel-lang.org/ChapelCon24.html"
+  url="/ChapelCon24.html"
 
 
 +++

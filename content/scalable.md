@@ -6,16 +6,16 @@ keywords = ["TODO"]
 [[reasons]]
   name = "Global View of Data"
   description="Chapel builds distributed arrays into the array interface, meaning code written for a single node can run on an entire cluster."
-  url="https://chapel-lang.org/docs/language/spec/domain-maps.html"
+  url="/docs/language/spec/domain-maps.html"
 [[reasons]]
   name = "Multi-level Parallelism"
   description="The same language features support parallelism at the node and cluster level. Parallelize once and reap the benefits everywhere."
-  url="https://chapel-lang.org/docs/users-guide/locality/compilingAndExecutingMultiLocalePrograms.html"
+  url="/docs/users-guide/locality/compilingAndExecutingMultiLocalePrograms.html"
   
 [[reasons]]
   name = "Data and Computational Locality"
   description="Reason about where and how your code is communicating with Chapel's extensive locality features."
-  url="https://chapel-lang.org/docs/primers/locales.html"
+  url="/docs/primers/locales.html"
 
 [[perfResults]]
   title="Arkouda Argsort"

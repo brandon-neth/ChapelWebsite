@@ -81,7 +81,7 @@ keywords = ["FAQ","How do I","questions","what if"]
 [[recommended]]
   name="Chapel Feature Primers"
   description="Learn more about specific features of the Chapel langauge with our primer series."
-  url="https://chapel-lang.org/docs/primers/index.html"
+  url="/docs/primers/index.html"
 +++
 
 ## Recommended Resources

@@ -19,15 +19,15 @@ keywords = ["TODO"]
 [[keyFeatures]]
   name = "Unified Syntax"
   description = "No need to write seperate kernels for GPUs and CPUs"
-  url="https://chapel-lang.org/blog/posts/intro-to-gpus/"
+  url="/blog/posts/intro-to-gpus/"
 [[keyFeatures]]
   name = "Multi-Level Abstractions"
   description="Mix high- and low-level control over execution, distribution, and data transfer"
-  url="https://chapel-lang.org/blog/posts/gpu-data-movement/"
+  url="/blog/posts/gpu-data-movement/"
 [[keyFeatures]]
   name="Portability Across Hardware"
   description="Run the same code on NVIDIA and AMD GPUs"
-  url="https://chapel-lang.org/docs/technotes/gpu.html#vendor-portability"
+  url="/docs/technotes/gpu.html#vendor-portability"
 
 [[codeExamples]]
   name = "Chapel CPU"

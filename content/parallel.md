@@ -6,42 +6,42 @@ keywords = ["TODO"]
 [[parallelFeatures]]
   name = "Task Parallelism"
   description="Launch new tasks with Chapel's `begin`, `cobegin`, and `coforall` constructs."
-  url="https://chapel-lang.org/docs/primers/taskParallel.html"
+  url="/docs/primers/taskParallel.html"
 
 [[parallelFeatures]]
   name="Data Parallelism"
   description="Parallelize computation over large datasets with parallel arrays, scalar promotion and `forall` loops."
-  url="https://chapel-lang.org/docs/primers/index.html#data-parallelism"
+  url="/docs/primers/index.html#data-parallelism"
 
 [[parallelFeatures]]
   name="Synchronization"
   description="Keep threads in line with `sync` types and `barrier` objects."
-  url="https://chapel-lang.org/docs/modules/standard/Collectives.html"
+  url="/docs/modules/standard/Collectives.html"
 
 [[parallelFeatures]]
   name="Atomics"
   description="Chapel's native `atomic` types provide a hardware-supported way to coordinate tasks."
-  url="https://chapel-lang.org/docs/primers/atomics.html"
+  url="/docs/primers/atomics.html"
 
 [[parallelFeatures]]
   name="Futures"
   description="Leverage asynchronous execution with the `Futures` library."
-  url="https://chapel-lang.org/docs/modules/packages/Futures.html"
+  url="/docs/modules/packages/Futures.html"
 
 [[parallelFeatures]]
   name="Locality Controls"
   description="Coordinate multi-node execution without mangling your program with Chapel's `locale` types and `on` statements."
-  url="https://chapel-lang.org/docs/primers/locales.html"
+  url="/docs/primers/locales.html"
 
 [[parallelismTypes]]
   name="Shared-Memory Parallelism"
   description="Effortlessly leverage your multi-core machine for task and data parallelism."
-  url="https://chapel-lang.org/docs/language/spec/index.html#parallel-programming"
+  url="/docs/language/spec/index.html#parallel-programming"
 
 [[parallelismTypes]]
   name="Distributed-Memory Parallelism"
   description="No more MPI. Chapel's locality features make distributed-memory parallelism as easy as writing sequential code."
-  url="https://chapel-lang.org/docs/language/spec/index.html#distributed-programming"
+  url="/docs/language/spec/index.html#distributed-programming"
 
 [[parallelismTypes]]
   name="CPU and GPU Parallelism"

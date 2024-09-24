@@ -84,8 +84,8 @@ keywords = ["TODO"]
   venue="CUG 2018, Stockholm Sweden"
   date="May 22, 2018."
   description="This paper describes the progress that has been made with Chapel since the HPCS program wrapped up."
-  url="https://chapel-lang.org/publications/cug2018-chapel.pdf"
-  slides="https://chapel-lang.org/publications/ChapelForCUG2018.pdf"
+  url="/publications/cug2018-chapel.pdf"
+  slides="/publications/ChapelForCUG2018.pdf"
 
 [[projectUpdates]]
   title="The State of the Chapel Union"
@@ -93,8 +93,8 @@ keywords = ["TODO"]
   venue="CUG 2013, "
   date="May 2013."
   description="This paper provides a snapshot of the Chapel project at the juncture between the end of the HPCS project and the start of the next phase in Chapel's development. It covers past successes, current status, and future directions."
-  url="https://chapel-lang.org/papers/ChapelCUG13.pdf"
-  slides="https://chapel-lang.org/presentations/ChapelForCUG13-final.pdf"
+  url="/papers/ChapelCUG13.pdf"
+  slides="/presentations/ChapelForCUG13-final.pdf"
 
 [[optimizationPapers]]
   title="Locality-Based Optimizations in the Chapel Compiler"
@@ -103,7 +103,7 @@ keywords = ["TODO"]
   date="October 13, 2021"
   description="This paper describes a pair of recent compiler optimizations focused on reducing communication overheads in Chapel, leveraging Chapel's high-level abstractions—one that strength reduces local array accesses, and a second which aggregates communications to amortize overheads."
   url="https://lcpc2021.github.io/pre_workshop_papers/Kayraklioglu_lcpc21.pdf"
-  slides="https://chapel-lang.org/presentations/engin_lcpc21_slides.pdf"
+  slides="/presentations/engin_lcpc21_slides.pdf"
 
 [[optimizationPapers]]
   title="A Machine-Learning-Based Framework for Productive Locality Exploitation"
@@ -127,8 +127,8 @@ keywords = ["TODO"]
   venue="9th International Conference on Partitioned Global Address Space Programming Models (PGAS 2015)"
   date="Sept 2015"
   description="This paper describes an optimization implemented for Chapel in which the runtime library aggregates puts and gets in accordance with Chapel's memory consistency model in order to reduce the potential overhead of doing fine-grained communications."
-  url="https://chapel-lang.org/papers/pgas15-caching.pdf"
-  slides="https://chapel-lang.org/presentations/PGAS15/pgas-2015-caching.pdf"
+  url="/papers/pgas15-caching.pdf"
+  slides="/presentations/PGAS15/pgas-2015-caching.pdf"
 
 [[applicationPapers]]
   title="A Comparative Study of High-Productivity High-Performance Programming Languages for Parallel Metaheuristics"
@@ -170,7 +170,7 @@ keywords = ["TODO"]
   date="October 2011"
   description="This paper describes how users can create parallel iterators that support zippered iteration in Chapel, demonstrating them via several examples that partition iteration spaces statically and dynamically."
   url="http://pgas11.rice.edu/papers/ChamberlainEtAl-Chapel-Iterators-PGAS11.pdf"
-  slides="https://chapel-lang.org/presentations/ChapelForPGAS2011.pdf"
+  slides="/presentations/ChapelForPGAS2011.pdf"
 
 [[multiResolutionPapers]]
   title="Authoring User-Defined Domain Maps in Chapel"
@@ -178,8 +178,8 @@ keywords = ["TODO"]
   venue="CUG 2011"
   date="May 2011"
   description="This paper builds on our HotPAR 2010 paper by describing the programmer's role in implementing user-defined distributions and layouts in Chapel."
-  url="https://chapel-lang.org/publications/cug11-final.pdf"
-  slides="https://chapel-lang.org/presentations/ChapelForCUG2011.pdf"
+  url="/publications/cug11-final.pdf"
+  slides="/presentations/ChapelForCUG2011.pdf"
 
 [[multiResolutionPapers]]
   title="User-Defined Distributions and Layouts in Chapel: Philosophy and Framework"
@@ -187,8 +187,8 @@ keywords = ["TODO"]
   venue="2nd USENIX Workshop on Hot Topics in Parallelism (HotPar'10)"
   date="June 2010"
   description="This paper describes our approach and software framework for implementing user-defined distributions and memory layouts using Chapel's domain map concept."
-  url="https://chapel-lang.org/publications/hotpar10-final.pdf"
-  slides="https://chapel-lang.org/presentations/Chamberlain-HotPAR10.pdf"
+  url="/publications/hotpar10-final.pdf"
+  slides="/presentations/Chamberlain-HotPAR10.pdf"
 
 [[toolPapers]]
   title="ChplBlamer: A Data-centric and Code-centric Combined Profiler for Multi-locale Chapel Programs"
@@ -197,7 +197,7 @@ keywords = ["TODO"]
   date="June 2018"
   description="This paper describes a tool that uses a combination of data-centric and code-centric information to relate performance profiling information back to user-level data structures and source code in Chapel programs."
   url="http://ics2018.ict.ac.cn/essay/ChplBlamer-final_version.pdf"
-  slides="https://chapel-lang.org/papers/ICS18-Hui-slides.pdf"
+  slides="/papers/ICS18-Hui-slides.pdf"
 
 [[toolPapers]]
   title="APAT: an access pattern analysis tool for distributed arrays"
@@ -222,7 +222,7 @@ keywords = ["TODO"]
   date="June 2015"
   description="This paper explores the expression of parameterized diamond-shaped time-space tilings in Chapel, demonstrating competitive performance with C+OpenMP along with significant software engineering benefits due to Chapel's support for parallel iterators."
   url="https://www2.cs.arizona.edu/~ianbertolacci/publications/ICS2015-Paper-Parameterized_Diamond_Tiling_for_Stencil_Computations_with_Chapel_Parallel_Iterators.pdf"
-  slides="https://chapel-lang.org/presentations/ICS2015-Bertolacci.pdf"
+  slides="/presentations/ICS2015-Bertolacci.pdf"
 
 [[historicalPapers]]
   title="The Cascade High Productivity Language"
@@ -230,8 +230,8 @@ keywords = ["TODO"]
   venue="In 9th International Workshop on High-Level Parallel Programming Models and Supportive Environments (HIPS 2004), pages 52-60. IEEE Computer Society"
   date="April 2004"
   description="This is the original Chapel paper which lays out some of our motivation and foundations for exploring the language. Note that the language has evolved significantly since this paper was published, but it remains an interesting historical artifact."
-  url="https://chapel-lang.org/publications/hips04.pdf"
-  slides="https://chapel-lang.org/publications/hips04-slides.pdf"
+  url="/publications/hips04.pdf"
+  slides="/publications/hips04-slides.pdf"
 
 
 [[featuredPresentations]]

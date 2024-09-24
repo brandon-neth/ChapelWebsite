@@ -6,14 +6,14 @@ keywords = ["TODO"]
   title="Sorting"
   description="Chapel's standard library sort runs an order of magnitude faster than the next fastest language."
   image="/img/perf/sort-comparison.png"
-  url="https://chapel-lang.org/blog/posts/std-sort-performance/"
+  url="/blog/posts/std-sort-performance/"
   weight=0
 
 [[singleNodeResult]]
   title="Poisson Solver"
   description="Chapel solutions to Poisson's equation outperform C++ solutions while requiring less code overall."
   image="/img/perf/navier-stokes.png"
-  url="https://chapel-lang.org/blog/posts/bns2/"
+  url="/blog/posts/bns2/"
 [[singleNodeResultNotReady]]
   name="N-Body Simulation"
   description="TODO"
@@ -24,7 +24,7 @@ keywords = ["TODO"]
 [[singleNodeResult]]
   title="1 Billion Row Challenge"
   description="Chapel can process massive amounts of data, all on a single multi-core machine."
-  url="https://chapel-lang.org/blog/posts/1brc/"
+  url="/blog/posts/1brc/"
   image="/img/perf/1brc-final-result.png"
   weight=1
 
@@ -38,33 +38,33 @@ keywords = ["TODO"]
 [[compilerOptimizations]]
   name="Bundled Optimizations"
   description="The `--fast` flag turns on a collection of optimizations and passes optimization flags to the backend code generator for faster code every time."
-  url="https://chapel-lang.org/docs/usingchapel/man.html"
+  url="/docs/usingchapel/man.html"
 
 [[compilerOptimizations]]
   name="Automatic aggregation"
   description="Improve communication performance with the `--auto-aggregation` flag."
-  url="https://chapel-lang.org/docs/usingchapel/man.html"
+  url="/docs/usingchapel/man.html"
 
 [[compilerOptimizations]]
   name="Vectorization"
   description="Pass vectorization hints to the target compiler with the `--vectorize` flag."
-  url="https://chapel-lang.org/docs/usingchapel/man.html"
+  url="/docs/usingchapel/man.html"
 
 
 [[fastFeatures]]
   name="Array Reductions"
   description="Sum an array or check for an element in a single parallel expression. Reductions are natively supported and automatically parallelized."
-  url="https://chapel-lang.org/docs/primers/reductions.html#reductions"
+  url="/docs/primers/reductions.html#reductions"
 
 [[fastFeatures]]
   name="Sparse array operations"
   description="Sparse array support makes it easier to write and parallelize applications working with gigantic data."
-  url="https://chapel-lang.org/docs/modules/layouts/LayoutCS.html"
+  url="/docs/modules/layouts/LayoutCS.html"
 
 [[fastFeatures]]
   name="Parallel IO"
   description="Use every core with built-in support for parallel file IO."
-  url="https://chapel-lang.org/docs/modules/packages/ParallelIO.html"
+  url="/docs/modules/packages/ParallelIO.html"
 
 
 +++
