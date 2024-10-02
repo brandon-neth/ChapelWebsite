@@ -1,4 +1,4 @@
-text: "Familiar Python client interface, powered by a Chapel server that scales to compute and memory resources beyond any comparable analysis tool."
+text: "Familiar Python/Jupyter client interface, powered by a Chapel server that scales to compute and memory resources beyond any comparable tool. Interactively work with dozens of TBs of data."
 name: "Arkouda"
 tagline: "Interactive data science at massive scale"
 url: "https://github.com/Bears-R-Us/arkouda#readme"

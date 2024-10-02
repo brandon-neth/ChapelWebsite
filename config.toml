@@ -261,7 +261,7 @@ pluralizelisttitles = false
 [[params.quotes]]
     name="Éric Laurendeau"
     title="Professor, Polytechnique Montréal"
-    quote="[Chapel] promotes the programming efficiency ... We ask students at the master's degree to do stuff that would take 2 years and they do it in 3 months."
+    quote="The use of Chapel worked as intended: the code maintenance is very much reduced, and its readability is astonishing. This enables undergraduate students to contribute to its development, something almost impossible to think of when using very complex software."
 
 [[params.quotes]]
     name="Tess Hayes"
@@ -269,12 +269,39 @@ pluralizelisttitles = false
     quote="A lot of the nitty gritty is hidden from you until you need to know it. ... It feels like the complexity grows as you get more comfortable -- rather than being hit with everything at once."
 
 [[params.codes]]
-  name="Distributed Hello World"
+  name="Hello World"
   default="true"
   code = """
-coforall loc in Locales do on loc {
-  writeln("Hello World from locale ", here.id);
-}
+writeln("Hello, world!");
+
+// create a parallel task per processor core
+coforall tid in 0..<here.maxTaskPar do
+  writeln("Hello from task ", tid);
+
+// print these 1,000 messages in parallel using all cores
+forall i in 1..1000 do
+  writeln("Hello from iteration ", i);
+"""
+
+[[params.codes]]
+  name="Distributed Hello World"
+  code= """
+   // print a message per compute node
+coforall loc in Locales do
+  on loc do
+    writeln("Hello from locale ", loc.id);
+
+// print a message per core per compute node
+coforall loc in Locales do
+  on loc do
+    coforall tid in 0..<here.maxTaskPar do
+      writeln("Hello from task ", tid, " on locale ", loc.id);
+
+// print 1,000 messages in parallel using all nodes and cores
+use BlockDist;
+const Inds = blockDist.createDomain(1..1000);
+forall i in Inds do
+  writeln("Hello from iteration ", i, " running on locale ", here.id);
 """
 
 
@@ -283,17 +310,18 @@ coforall loc in Locales do on loc {
   code="""
 use parallelIO;
 
-record cityTemperature: readDeserializable {
+record cityTemp: readDeserializable {
   var city: string;  // city name
   var temp: real;    // temperature
 }
 
-proc ref cityTemperature.deserialize(reader: fileReader(?), ref deserializer) throws {
+proc ref cityTemp.deserialize(reader: fileReader(?), ref deserializer) throws {
   this.city = reader.readThrough(';', stripSeparator=true);
   this.temp = reader.read(real);
 }
 
-forall element in readDelimited("myFile.txt", t=cityTemperature) {
+/* Example line of myFile.txt: Vancover;4.2 */
+forall element in readDelimited("myFile.txt", t=cityTemp) {
   /* process data */
 }
 """
@@ -301,45 +329,52 @@ forall element in readDelimited("myFile.txt", t=cityTemperature) {
 [[params.codes]]
   name="1D Heat Diffusion"
   code="""
-const fullDomain = {0..<N};
-const interior = fullDomain.expand(-1);
+// set different values at runtime with command line arguments
+// e.g. --n=2048 --numSteps=256 --alpha=0.8
+config const n = 1000;
+config const numSteps = 100;
+config const alpha = 1.0;
+
+const fullDomain = {1..n};
+const interior = {1..n-1};
 
 var u: [fullDomain] real = 1.0; 
-u[N/4..3*N/4] = 2.0;  // make the middle a bit hotter
+u[n/4..3*n/4] = 2.0;  // make the middle a bit hotter
 
 var un = u;
 
 for 1..numSteps {
   forall i in interior do  // shared-memory parallelism
     u[i] = un[i] + alpha * (un[i-1] - 2*un[i] + un[i+1]);  
-  un <=> u; // swap the two arrays
+  un <=> u;  // swap the two arrays
 }
+
+writeln(un);
 """
 
 [[params.codes]]
-  name="Coral Reef Image Analysis Kernel"
+  name="GPU Kernel"
   code="""
-proc convolve(InputArr, OutputArr) { //3D Input, 2D Output
- foreach ... {
-    tonOfMath();
- }
-}
+use Random, Math;
 
-proc main() {
-  var InputArr: ...;
-  var OutputArr: ...;
+const nGpus = here.gpus.size,
+      n     = Locales.size*nGpus;
 
-  coforall loc in Locales do on loc { // use all nodes in parallel
-    coforall gpu in here.gpus do on gpu { // use all GPUs on this node in parallel
-      coforall task in 0..#numWorkers { // use numWorkers on this GPU in parallel
-        var MyInputArr = InputArr[...]; // high-level slice operations handle data copy
-        var MyOutputArr: ...;
-        convolve(MyInputArr,MyOutputArr);
-        OutputArr[...] = MyOutputArr;
-      }
-    }
+var A: [1..n, 1..n] real;
+
+fillRandom(A);
+
+// use all nodes
+coforall (loc, localRowStart) in zip(Locales, 1.. by nGpus) do on loc { 
+  // and all GPUs within each
+  coforall (gpu, row) in zip(here.gpus, localRowStart..) do on gpu {    
+    var B: [1..n] real = A[row, ..];    // copy a row from device to host
+    B = asin(B);                        // compute (kernel launch)
+    A[row, ..] = B;                     // copy the row back
   }
 }
+
+writeln(A);
 """
 
 
