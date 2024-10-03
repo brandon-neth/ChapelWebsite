@@ -1811,6 +1811,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .bar.background-pentagon {
   background: url('../img/texture-bw.png') center center repeat;
+  background: var(--chapel-light-green);
+  background: linear-gradient( rgba(255,255,255, 0.3), rgba(255,255,255, 0.3) ), url('../img/blue-green-gradient.png') center center repeat; 
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }

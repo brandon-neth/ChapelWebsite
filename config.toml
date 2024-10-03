@@ -308,21 +308,21 @@ forall i in Inds do
 [[params.codes]]
   name="Parallel File IO"
   code="""
-use parallelIO;
+use IO;
 
-record cityTemp: readDeserializable {
+// read in a file containing 'city name;temperature' lines (1BRC-style)
+var stats = [line in stdin.lines()] new cityTemperature(line);
+writeln(stats);
+
+record cityTemperature {
   var city: string;  // city name
   var temp: real;    // temperature
-}
 
-proc ref cityTemp.deserialize(reader: fileReader(?), ref deserializer) throws {
-  this.city = reader.readThrough(';', stripSeparator=true);
-  this.temp = reader.read(real);
-}
-
-/* Example line of myFile.txt: Vancover;4.2 */
-forall element in readDelimited("myFile.txt", t=cityTemp) {
-  /* process data */
+  proc init(str: string) {
+    const words = str.split(";");
+    this.city = words[0];
+    this.temp = words[1]: real;
+  }
 }
 """
 
