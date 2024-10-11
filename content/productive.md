@@ -1,13 +1,13 @@
 +++
-title = "Accelerate Development with a Productive Parallel Language"
+title = "Accelerate Development with a Productive Language"
 description = "Productive Computing with the Chapel programming language"
 keywords = ["TODO"]
 
 
 [[languageFeatures]]
-  name = "Config variables"
-  description="Language-level support for parsing command line arguments, at both compile-time and run-time."
-  url="https://chapel-lang.org/docs/primers/variables.html#configs"
+  name = "Config Declarations"
+  description="Language-level support for overriding default values from the command-line, at both compile-time and run-time."
+  url="https://ato.pxeger.com/run?1=PZAxbsMwDEV3nYIREKAuqgzpEtjQLboVHRSXsgVIsiHJqX2WLl3S-3T0bUrHsieC_MR_-P_7t25Vj3aGdy6iH9yncVG-8heg1U1vU48yoLL84-c-JC0u81_deW0aoBET3DBcu4ggQSsbsWJZvakADmNUzaLxFq3t-K72KigHmUb6eVcSAWHl0r3uXG9xrBgzekelFj0D-AomofVPmVLQ0wIdy833ebWp2PY5UqgSKNp4WjBlTMH4pqjWYFu-IxUhsqlszaQOjzJExssUBtzb-Ac"
 [[languageFeatures]]
   name = "Interoperability"
   description="Chapel is designed to interoperate seamlessly with libraries written in C. No need to rewrite important libraries."
@@ -17,28 +17,31 @@ keywords = ["TODO"]
   description = "Scope-based (de)allocation, ownership management, default-safe strings, and other semantic checks make Chapel safer than C and C++."
 
 [[highlightGrid]]
-  name="Language Tooling Support"
-  description="The Chapel Language Server offers common IDE features and  custom tooling support."
-  url="/blog/posts/chapel-lsp/"
-[[highlightGrid]]
   name="Easy and Fast Ramp Up"
-  description="Chapel enabled the CHAMPS team to bring new contributors up to speed in just a few weeks."
-  url="https://www.youtube.com/watch?v=wD-a_KyB8aI&t=1904s"
+  description="Chapel enables users to bring new contributors up to speed in record time."
+  url="/blog/posts/7qs-laurendeau/"
 [[highlightGrid]]
-  name="Writes Faster, Runs Faster"
-  description="Peer-reviewed studies shows that Chapel is both faster and more productive than alternatives."
+  name="""
+  Writes Faster,  
+  Runs Faster
+  """
+  description="Peer-reviewed studies show that Chapel is faster and more productive than alternatives."
   url= "https://link.springer.com/chapter/10.1007/978-3-031-48803-0_11"
+[[highlightGrid]]
+  name="Language Tooling Support"
+  description="The Chapel language server and linter integrate with your favorite editor to supercharge your development experience."
+  url="/blog/posts/chapel-lsp/"
 
 [[result]]
-  title="Computer Language Benchmark Games"
-  description="When compared against other common programming languages, solutions built in Chapel are both short and performant."
+  title="Computer Language Benchmarks Game"
+  description="When compared against other common programming languages, solutions built in Chapel are both compact and performant."
   image="/img/clbg/clbg_summary.png"
   url="https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html"
   weight=1
 
 [[result]]
   title="Parallel Metaheuristics"
-  description="Chapel implementations of parallel metaheuristic algorithms are more productive that other Julia, Python, and OpenMP reference implementations"
+  description="Chapel implementations of parallel metaheuristic algorithms are more productive than Julia, Python, and OpenMP reference implementations"
   image="/img/RelativeProductivity.png"
   url="https://inria.hal.science/hal-02879767"
   weight=3
@@ -47,7 +50,9 @@ keywords = ["TODO"]
   title="Parallel Heat Equation"
   description="Chapel outperforms other modern languages in both productivity and performance."
   image="/img/heat-productivity.png"
+  url="https://link.springer.com/chapter/10.1007/978-3-031-48803-0_11"
   weight=2
+  
 [[introText]]
 text="Gone are the days of a codebase where the actual purpose of your code are overshadowed by all the MPI calls required to make it work. Chapel has powerful, succinct programming constructs for targeting all kinds of parallelism at all kinds of scales. From data parallelism to task parallelism and laptop to GPU to cluster, Chapel uses a unified set of language features so you can learn them once and use them again and again."
 
@@ -58,7 +63,7 @@ text="Gone are the days of a codebase where the actual purpose of your code are 
 
 {{<grid "highlightGrid">}}
 
-# Fast And Concise 
+# Concise but Fast
 
 {{<switcher "result">}}
 

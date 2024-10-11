@@ -20,7 +20,13 @@
                               <p>{{ .description | safeHTML }}</p>
                           </div>
                           <div class="col-sm-7">
+                            {{ if .url }}
+                                <a href="{{ .url }}">
+                            {{ end }}
                               <img class="img-responsive" src="../{{ .image }}" alt="" style="padding-right: 30px">
+                            {{ if .url }}
+                                </a>
+                            {{ end }}
                           </div>
                       </div>
                   {{ if .href }}
