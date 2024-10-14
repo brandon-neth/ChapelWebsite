@@ -52,7 +52,7 @@ keywords = ["TODO"]
 
 +++
 
-Workflows written using Chapel scale enormously. The same code written on your laptop can perform on however many nodes you can give it, be it one, dozens, or thousands. Applications written by Chapel users have successfully scaled to more than 8,000 compute nodes, 1,000,000 CPU cores, and 1,000 GPUs. The largest supercomputers in the world run Chapel. Whatever scale the system, you can too. 
+Workflows written using Chapel scale enormously. The same code written on your laptop can perform on however many nodes you can give it, be it one, dozens, or thousands. Applications written by Chapel users have successfully scaled to more than 8,000 compute nodes, 1,000,000 CPU cores, and 1,000 GPUs. The largest supercomputers in the world run Chapel. No matter the scale your system, you can too. 
 {.content-paragraph}
 
 # Scaling Results with Chapel
