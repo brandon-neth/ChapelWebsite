@@ -4,7 +4,7 @@ keywords = ["TODO"]
 
 [[singleNodeResult]]
   title="Sorting"
-  description="Chapel's standard library sort runs an order of magnitude faster than the next fastest language."
+  description="Chapel's standard library sort runs an order of magnitude faster than that of the next fastest language."
   image="/img/perf/sort-comparison.png"
   url="/blog/posts/std-sort-performance/"
   weight=0
@@ -57,9 +57,9 @@ keywords = ["TODO"]
   url="https://chapel-lang.org/docs/primers/reductions.html#reductions"
 
 [[fastFeatures]]
-  name="Sparse array operations"
-  description="Sparse array support makes it easier to write and parallelize applications working with gigantic data."
-  url="https://chapel-lang.org/docs/modules/layouts/LayoutCS.html"
+  name="Scalar Promotion"
+  description="Scalar operations promote to accept array arguments and process in parallel."
+  url="TODO"
 
 [[fastFeatures]]
   name="Parallel IO"
@@ -69,7 +69,7 @@ keywords = ["TODO"]
 
 +++
 
-### Competes at _All_ Scales, Even the Smaller Ones
+### Designed for Supercomputers, Delivers on Desktop Too
 
 {{<switcher "singleNodeResult">}}
 

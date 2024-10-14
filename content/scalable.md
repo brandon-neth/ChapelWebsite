@@ -5,7 +5,7 @@ keywords = ["TODO"]
 
 [[reasons]]
   name = "Global View of Data"
-  description="Chapel builds distributed arrays into the array interface, meaning code written for a single node can run on an entire cluster."
+  description="Chapel has built-in support for distributed global arrays, meaning computations written for a single node can run on an entire cluster."
   url="https://chapel-lang.org/docs/language/spec/domain-maps.html"
 [[reasons]]
   name = "Multi-level Parallelism"
@@ -14,12 +14,12 @@ keywords = ["TODO"]
   
 [[reasons]]
   name = "Data and Computational Locality"
-  description="Reason about where and how your code is communicating with Chapel's extensive locality features."
+  description="Control where your program's tasks are executed using Chapel's extensive locality features."
   url="https://chapel-lang.org/docs/primers/locales.html"
 
 [[perfResults]]
   title="Arkouda Argsort"
-  description="Arkouda's argsort function sorts 256 TiB of data in just 31 seconds, scaling to more than 8,000 nodes. All in just over 100 lines of Chapel code."
+  description="Arkouda's argsort routine can sort 256 TiB of data in just 31 seconds, scaling to more than 8,000 nodes. All in around 100 lines of Chapel code."
   image="img/perf/arkouda-argsort.png"
 [[perfResults]]
   title = "NAS FT"
@@ -28,7 +28,7 @@ keywords = ["TODO"]
   weight = 0
 [[perfResults]]
   title = "Stream"
-  description = "The defacto industry standard benchmark for measuring memory performance. Calculates a series of element-wise array operations, including copy, scale, sum, and triad."
+  description = "The de facto industry standard benchmark for measuring memory performance. Calculates element-wise triad."
   image = "img/perf/perf-stream.png"
   weight=1
 [[perfResults]]
@@ -52,7 +52,7 @@ keywords = ["TODO"]
 
 +++
 
-Workflows written using Chapel scale enormously. The same code written on your laptop will perform on however many nodes you can give it, be it one, dozens, or thousands. Arkouda, a Chapel application for data analysis at scale, scales to more than 8000 nodes. The largest supercomputers in the world use Chapel. You can too. 
+Workflows written using Chapel scale enormously. The same code written on your laptop can perform on however many nodes you can give it, be it one, dozens, or thousands. Applications written by Chapel users have successfully scaled to more than 8,000 compute nodes, 1,000,000 CPU cores, and 1,000 GPUs. The largest supercomputers in the world run Chapel. Whatever scale the system, you can too. 
 {.content-paragraph}
 
 # Scaling Results with Chapel
