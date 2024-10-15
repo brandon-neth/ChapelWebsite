@@ -1781,7 +1781,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('../img/texture-bw.png') center center repeat;
+  background: linear-gradient( rgba(255,255,255, 0.3), rgba(255,255,255, 0.3) ), url('../img/blue-green-gradient.png') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1843,12 +1843,12 @@ fieldset[disabled] .btn-template-primary.active {
   background: #004b81;
 }
 .bar.background-image-fixed-1 {
-  background: url('../img/fixed-background-1.jpg') center top no-repeat;
+  background: url('../img/blue-green-gradient.png') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 .bar.background-image-fixed-2 {
-  background: url('../img/fixed-background-2.jpg') center top no-repeat;
+  background: url('../img/blue-green-gradient.png') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
