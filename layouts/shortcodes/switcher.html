@@ -27,6 +27,9 @@
                             {{ if .url }}
                                 </a>
                             {{ end }}
+                            {{if .source }}
+                                <p class="source">{{ .source }}</p>
+                            {{ end }}
                           </div>
                       </div>
                   {{ if .href }}

@@ -409,6 +409,13 @@ a:hover .social-name {
   flex: 1;
 }
 
+p.source {
+  font-size: 0.7em;
+  text-transform: none;
+  max-width: 100%;
+
+  padding-right: 30px;
+}
 
 @media (max-width: 768px) {
   .attribute-item.box-simple {

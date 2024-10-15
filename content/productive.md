@@ -44,6 +44,7 @@ keywords = ["TODO"]
   description="Chapel implementations of parallel metaheuristic algorithms are more productive than Julia, Python, and OpenMP reference implementations"
   image="/img/RelativeProductivity.png"
   url="https://inria.hal.science/hal-02879767"
+  source="Gyms et al, A comparative study of high-productivity high-performance programming languages for parallel metaheuristics. Swarm and Evolutionary Computation, 2020."
   weight=3
 
 [[result]]
@@ -51,6 +52,7 @@ keywords = ["TODO"]
   description="Chapel outperforms other modern languages in both productivity and performance."
   image="/img/heat-productivity.png"
   url="https://link.springer.com/chapter/10.1007/978-3-031-48803-0_11"
+  source="Diehl et al. Benchmarking the Parallel 1D Heat Equation Solver in Chapel, Charm++, C++, HPX, Go, Julia, Python, Rust, Swift, and Java. Euro-Par 2023."
   weight=2
   
 [[introText]]
