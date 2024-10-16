@@ -18,17 +18,16 @@
                           <div class="col-sm-5 switcher-text right">
                               <h1>{{ .title | safeHTML }}</h1>
                               <p>{{ .description | safeHTML }}</p>
+                              {{ if .url }}
+                                <a href="{{ .url }}">
+                                    <div class="learn-more-button">Learn More</div>
+                                </a>
+                              {{ end }}
                           </div>
                           <div class="col-sm-7">
-                            {{ if .url }}
-                                <a href="{{ .url }}">
-                            {{ end }}
-                              <img class="img-responsive" src="../{{ .image }}" alt="" style="padding-right: 30px">
-                            {{ if .url }}
-                                </a>
-                            {{ end }}
+                            <img class="img-responsive" src="../{{ .image }}" alt="" style="padding-right: 30px">
                             {{if .source }}
-                                <p class="source">{{ .source }}</p>
+                              <p class="source">{{ .source }}</p>
                             {{ end }}
                           </div>
                       </div>

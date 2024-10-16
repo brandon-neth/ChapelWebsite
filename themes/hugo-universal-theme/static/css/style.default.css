@@ -17,6 +17,7 @@
   --link-hover-bg: #2c8494;
   --navbar-focus: #80cbd9;
   --chapel-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.2);
+  --chapel-tessellated: linear-gradient( rgba(255,255,255, 0.3), rgba(255,255,255, 0.3) ), url('../img/blue-green-gradient.png') center center repeat;
 }
 
 .clearfix:before,
@@ -1781,7 +1782,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: linear-gradient( rgba(255,255,255, 0.3), rgba(255,255,255, 0.3) ), url('../img/blue-green-gradient.png') center center repeat;
+  background: var(--chapel-tessellated);
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1810,7 +1811,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 60px 0;
 }
 .bar.background-pentagon {
-  background: linear-gradient( rgba(255,255,255, 0.3), rgba(255,255,255, 0.3) ), url('../img/blue-green-gradient.png') center center repeat; 
+  background: var(--chapel-tessellated);
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }

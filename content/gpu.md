@@ -18,14 +18,14 @@ keywords = ["TODO"]
 
 [[keyFeatures]]
   name = "Unified Syntax"
-  description = "No need to write seperate kernels for GPUs and CPUs"
+  description = "No need to write seperate code for GPUs and CPUs"
   url="/blog/posts/intro-to-gpus/"
 [[keyFeatures]]
   name = "Multi-Level Abstractions"
   description="Mix high- and low-level control over execution, distribution, and data transfer"
   url="/blog/posts/gpu-data-movement/"
 [[keyFeatures]]
-  name="Portability Across Hardware"
+  name="Vendor-Neutral"
   description="Run the same code on NVIDIA and AMD GPUs"
   url="https://chapel-lang.org/docs/technotes/gpu.html#vendor-portability"
 
@@ -51,20 +51,18 @@ keywords = ["TODO"]
 
 +++
 
-GPUs are the powerhouse of modern computing workloads. But conventional GPU programming couldn't be more more difficult. Chapel makes it simple, all with the same easy-to-use language constructs as distributed programming.
+GPUs are the powerhouse of modern computing systems. But conventional GPU programming couldn't be more difficult. Chapel makes it simple, all with the same easy-to-use language constructs as parallel and distributed programming.
 {.content-paragraph}
-
-# Key Features of Chapel for GPU Execution
-
-{{<grid "keyFeatures">}}
 
 # Example: Matrix Multiplication
 
 {{<code-example "codeExamples">}}
 
-# Use Cases for Chapel's Built-In GPU Support
 
-{{<grid "useCases">}}
+# Key Features of Chapel for GPU Execution
+
+{{<grid "keyFeatures">}}
+
 
 
 

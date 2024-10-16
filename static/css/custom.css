@@ -501,3 +501,31 @@ td {
   padding-left: 2px;
   font-size: 1.2em;
 }
+
+.tessellated-background {
+  background: var(--chapel-tessellated);
+}
+
+
+.learn-more-button {
+  float: right;
+  width: 90px;
+  height: 40px;
+  border: 2px solid var(--chapel-blue);
+  text-align: center;
+  line-height: 36px;
+  margin-top: 10px;
+  border-color: var(--chapel-blue);
+  background-color: var(--chapel-white);
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.learn-more-button:hover {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: var(--chapel-light-green);
+}
