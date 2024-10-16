@@ -471,6 +471,33 @@ details[open] summary h4::after {
   content: "\25BE";
 }
 
+details summary h3::after {
+  content: "\25B8";
+  color: var(--chapel-blue);
+}
+details[open] summary h3::after {
+  content: "\25BE";
+}
+
 details .toggle-list-contents{
   margin-left: 20px;
+}
+
+table, th, td {
+  border: 1px solid var(--chapel-gray);
+}
+
+table {
+  width: 80%;
+}
+
+th {
+  text-align: center;
+}
+tr {
+  height: 30px;
+}
+td {
+  padding-left: 2px;
+  font-size: 1.2em;
 }
