@@ -43,7 +43,9 @@ keywords = ["TODO"]
   weight = 3
 [[perfResults]]
   title="Multi-core Scaling"
-  description=""
+  description="Your multi-core CPU scales better with Chapel." 
+  image="/img/perf/navier-stokes.png"
+  url="/blog/posts/bns2/"
 
 [[perfResults]]
   title="GPU Scaling"
