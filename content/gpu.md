@@ -51,7 +51,7 @@ keywords = ["TODO"]
 
 +++
 
-GPUs are the powerhouse of modern computing systems. But conventional GPU programming couldn't be more difficult. Chapel makes it simple, all with the same easy-to-use language constructs as parallel and distributed programming.
+GPUs are the powerhouse of modern computing systems. Chapel's general-purpose capabilities for parallelism and locality control makes GPU programming as easy as programming a multi-core CPU. These capabilities makes GPU programming intuitive on a laptop with a GPU, on a leadership-class supercomputer, or anything in between. Chapel supports programming NVIDIA and AMD GPUs in a vendor-neutral way; the same code can be used on GPUs from both vendors without any change.
 {.content-paragraph}
 
 # Example: Matrix Multiplication
