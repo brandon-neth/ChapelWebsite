@@ -383,6 +383,11 @@ a:hover .social-name {
   margin-bottom: 20px;
 }
 
+.code-comparison {
+  overflow: scroll;
+  height: 400px;
+}
+
 .radio-code-selector {
   font-size: 1.35em;
   margin-bottom: 8px;
@@ -529,3 +534,4 @@ td {
   transition: all 0.2s ease;
   background-color: var(--chapel-light-green);
 }
+

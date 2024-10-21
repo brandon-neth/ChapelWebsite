@@ -56,7 +56,7 @@ GPUs are the powerhouse of modern computing systems. Chapel's general-purpose ca
 
 # Example: Matrix Multiplication
 
-{{<code-example "codeExamples">}}
+{{<code-comparison "codeExamples">}}
 
 
 # Key Features of Chapel for GPU Execution
