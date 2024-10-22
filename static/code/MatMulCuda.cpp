@@ -26,7 +26,7 @@ __global__ void matrixMultiplyKernel(const double* A, const double* B, double* C
 
 int main() {
     // Matrix sizes
-    int N = 100, M = 200, P = 400;
+    int N = 2000, M = 3000, P = 4000;
 
     double *hostA, *hostB, *hostC;
     double *devA, *devB, *devC;

@@ -1,6 +1,6 @@
 /* Implementation based on https://cnugteren.github.io/tutorial/pages/page3.html
    This kernel appears in a different file from main */
-__kernel void myGEMM1(const int M, const int N, const int K,
+__kernel void myGEMM1(const int M, const int N, const int P,
                       const __global float* A,
                       const __global float* B,
                       __global float* C) {
@@ -11,8 +11,8 @@ __kernel void myGEMM1(const int M, const int N, const int K,
 
     // Compute a single element (loop over K)
     float acc = 0.0f;
-    for (int k=0; k<K; k++) {
-        acc += A[k*M + globalRow] * B[globalCol*K + k];
+    for (int k=0; k<P; k++) {
+        acc += A[k*M + globalRow] * B[globalCol*P + k];
     }
 
     // Store the result
@@ -20,6 +20,11 @@ __kernel void myGEMM1(const int M, const int N, const int K,
 }
 
 void main() {
+
+  // Define the matrix dimensions
+  const int M = 2000;
+  const int N = 3000;
+  const int P = 4000;
 
   // Define OpenCL variables
   cl_int err;
@@ -87,15 +92,15 @@ void main() {
   free(bin);
 
   // Prepare OpenCL memory objects
-  cl_mem bufA    = clCreateBuffer(context, CL_MEM_READ_ONLY,  M*K*sizeof(*A), NULL, &err);
-  cl_mem bufB    = clCreateBuffer(context, CL_MEM_READ_ONLY,  K*N*sizeof(*B), NULL, &err);
-  cl_mem bufB_TR = clCreateBuffer(context, CL_MEM_READ_ONLY,  N*K*sizeof(*B), NULL, &err);
+  cl_mem bufA    = clCreateBuffer(context, CL_MEM_READ_ONLY,  M*P*sizeof(*A), NULL, &err);
+  cl_mem bufB    = clCreateBuffer(context, CL_MEM_READ_ONLY,  P*N*sizeof(*B), NULL, &err);
+  cl_mem bufB_TR = clCreateBuffer(context, CL_MEM_READ_ONLY,  N*P*sizeof(*B), NULL, &err);
   cl_mem bufC    = clCreateBuffer(context, CL_MEM_READ_WRITE, M*N*sizeof(*C), NULL, &err);
   checkError(err,__LINE__);
 
   // Copy matrices to the GPU (also C to erase the results of the previous run)
-  err = clEnqueueWriteBuffer(queue, bufA, CL_TRUE, 0, M*K*sizeof(*A), A, 0, NULL, NULL);
-  err = clEnqueueWriteBuffer(queue, bufB, CL_TRUE, 0, K*N*sizeof(*B), B, 0, NULL, NULL);
+  err = clEnqueueWriteBuffer(queue, bufA, CL_TRUE, 0, M*P*sizeof(*A), A, 0, NULL, NULL);
+  err = clEnqueueWriteBuffer(queue, bufB, CL_TRUE, 0, P*N*sizeof(*B), B, 0, NULL, NULL);
   err = clEnqueueWriteBuffer(queue, bufC, CL_TRUE, 0, M*N*sizeof(*C), C, 0, NULL, NULL);
   checkError(err,__LINE__);
 
@@ -107,7 +112,7 @@ void main() {
   // Set the kernel arguments
   err = clSetKernelArg(kernel1, 0, sizeof(int), (void*)&M);
   err = clSetKernelArg(kernel1, 1, sizeof(int), (void*)&N);
-  err = clSetKernelArg(kernel1, 2, sizeof(int), (void*)&K);
+  err = clSetKernelArg(kernel1, 2, sizeof(int), (void*)&P);
   err = clSetKernelArg(kernel1, 3, sizeof(cl_mem), (void*)&bufA);
   err = clSetKernelArg(kernel1, 4, sizeof(cl_mem), (void*)&bufB);
   err = clSetKernelArg(kernel1, 5, sizeof(cl_mem), (void*)&bufC);

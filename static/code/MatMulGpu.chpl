@@ -1,4 +1,4 @@
-config const N = 100, M = 200, P = 400;
+config const N = 2000, M = 3000, P = 4000;
 
 var hostA: [1..N,1..M] real;
 var hostB: [1..M,1..P] real;
